@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="stimetable.css">
+
+    <style>
+        .debug {
+            border: 1px solid yellow;
+
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">text</p>
+    <p class="st-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no </p>
+    <p class="st-text st-text--primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no </p>
+    <p class="st-text st-text--secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+        justo duo dolores et ea rebum. Stet clita kasd gubergren, no </p>
+
+    <p class="st-text st-text--250" style="margin: 1rem 0">text sizes</p>
+    <p class="st-text st-text--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no </p>
+    <p class="st-text st-text--medium">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no </p>
+    <p class="st-text st-text--big">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no </p>
+</div>
+
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">buttons</p>
+    <button class="st-button">Default</button>
+    <button class="st-button st-button--primary">Primary</button>
+    <button class="st-button st-button--secondary">Secondary</button>
+
+    <p class="st-text st-text--250" style="margin: 1rem 0">button sizes</p>
+    <button class="st-button st-button--small">Small</button>
+    <button class="st-button st-button--medium">Medium</button>
+    <button class="st-button st-button--big">Big</button>
+</div>
+
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">inputs</p>
+    <input class="st-input" placeholder="Default" />
+    <br />
+    <br />
+    <input class="st-input st-input--primary" placeholder="Primary" />
+    <br />
+    <br />
+    <input class="st-input st-input--secondary" placeholder="Secondary" />
+
+    <p class="st-text st-text--250" style="margin: 1rem 0">input sizes</p>
+    <input class="st-input st-input--small" placeholder="Small" />
+    <br />
+    <br />
+    <input class="st-input st-input--medium" placeholder="Medium" />
+    <br />
+    <br />
+    <input class="st-input st-input--big" placeholder="Big" />
+
+</div>
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">select sizes</p>
+    <select class="st-select st-select--small">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <br />
+    <br />
+    <select class="st-select st-select--medium">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <br />
+    <br />
+    <select class="st-select st-select--big">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+
+</div>
+
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">forms</p>
+
+    <form class="st-form">
+        <div class="st-form__control">
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+        <div class="st-form__control">
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control">
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+        <div class="st-form__control">
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control">
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi st-form__label--full">
+                <span>FullMulti:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control">
+            <label class="st-form__label st-form__label--settings">
+                <span>SettingsOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+
+        <div class="st-form__control">
+            <label class="st-form__label st-form__label--settings">
+                <span>Select:</span>
+                <select class="st-form__select">
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                </select>
+            </label>
+            <label class="st-form__label st-form__label--settings">
+                <span>SelectPrimary:</span>
+                <select class="st-form__select st-form__select--primary">
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                </select>
+            </label>
+            <label class="st-form__label st-form__label--settings">
+                <span>SelectSecondary:</span>
+                <select class="st-form__select st-form__select--secondary">
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                </select>
+            </label>
+        </div>
+    </form>
+
+    <p class="st-text st-text--250" style="margin: 1rem 0">form sizes</p>
+
+    <form class="st-form">
+        <div class="st-form__control st-form__control--small debug">
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+        <div class="st-form__control st-form__control--big debug">
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+
+            <label class="st-form__label">
+                <span>OneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control  st-form__control--small debug">
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+        <div class="st-form__control st-form__control--big debug">
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--multi">
+                <span>MultiLine:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control st-form__control--small debug">
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control st-form__control--big debug">
+            <label class="st-form__label st-form__label--settings">
+                <span>SettingsOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--settings">
+                <span>SettingsOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--settings">
+                <span>SettingsOneLiner:</span>
+                <input class="st-form__input" placeholder="input" />
+            </label>
+        </div>
+
+        <div class="st-form__control">
+            <button class="st-form__submit" type="submit">Submit</button>
+            <button class="st-form__submit st-form__submit--primary" type="submit">Submit</button>
+            <button class="st-form__submit st-form__submit--secondary" type="submit">Submit</button>
+
+        </div>
+        <div class="st-form__control">
+            <button class="st-form__submit st-form__submit--small" type="submit">Submit</button>
+            <button class="st-form__submit st-form__submit--medium" type="submit">Submit</button>
+            <button class="st-form__submit st-form__submit--big" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iIOvdBsf9BWJGUMMzzNBXuRMoP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_interpreter_path" value="D:/SoftwareDevelopmentKits/Node/Node12-16-3/node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="" />
+      <created>1601591871078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601591871078</updated>
+      <workItem from="1601591872197" duration="9255000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog" timestamp="1601601134655">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601134655" />
+    <state x="739" y="372" key="FileChooserDialogImpl" timestamp="1601592474006">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="739" y="372" key="FileChooserDialogImpl/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601592474006" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1601601135167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601135167" />
+  </component>
+</project>
