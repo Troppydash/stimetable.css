@@ -1,0 +1,37 @@
+{
+  "name": "@stimetable.css/react",
+  "version": "0.0.2",
+  "description": "React Component Wrapper for stimetable.css",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "run-dev": "cd example && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Terry Qi <troppydash.developer@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {
+    "stimetable.css": "0.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/react": "^16.9.50",
+    "@types/react-dom": "^16.9.8",
+    "rollup": "^2.28.2",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-typescript2": "^0.27.3",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.3"
+  }
+}

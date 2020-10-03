@@ -1,6 +1,6 @@
 {
   "name": "stimetable.css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Custom Stylesheet Package for STimetable",
   "main": "stimetable.css",
   "style": "stimetable.css",
@@ -11,3 +11,4 @@
   "author": "Troppydash",
   "license": "MIT"
 }
+
