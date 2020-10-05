@@ -1,3 +1,4 @@
 import 'stimetable.css';
 
-export * from "./input/button";
+import * as ThemeProvider from './provider/ThemeProvider';
+export { ThemeProvider };

@@ -20,41 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/react-stimetable.css.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/App.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/serviceWorker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/src/setupTests.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/example/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/src/helpers/classNameHelper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/src/input/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wrappers/react/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrappers/react/src/components/form/Form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrappers/react/src/components/general/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrappers/react/src/components/general/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrappers/react/src/components/general/Text.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wrappers/react/src/provider/ThemeProvider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stimetable.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stimetable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/example/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/example/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/example/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/example/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/src/helpers/classNameHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/src/helpers/classNameHelper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/react/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/react/src/input/button.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +57,7 @@
         <option value="SCSS File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -83,9 +73,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -98,7 +90,23 @@
     <property name="ts.external.directory.path" value="E:\Folder2020\Projects\NpmProjects\stimetable.css\wrappers\react\example\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Folder2020\Projects\NpmProjects\stimetable.css\wrappers\react\src\components\general" />
+      <recent name="E:\Folder2020\Projects\NpmProjects\stimetable.css\wrappers\react\src\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.run-dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/wrappers/react/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="run-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/wrappers/react/package.json" />
       <command value="run" />
@@ -109,9 +117,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="watch-build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/wrappers/react/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch-build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.run-dev" />
+        <item itemvalue="npm.watch-build" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +149,10 @@
       <workItem from="1601705324023" duration="3890000" />
       <workItem from="1601709516394" duration="495000" />
       <workItem from="1601710073492" duration="21000" />
-      <workItem from="1601710223896" duration="5866000" />
+      <workItem from="1601710223896" duration="5995000" />
+      <workItem from="1601848230133" duration="4030000" />
+      <workItem from="1601852466109" duration="4583000" />
+      <workItem from="1601857060083" duration="3270000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -138,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601601189943</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added React Wrapper">
+      <created>1601716156021</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601716156021</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UnversionedFiles">
+      <created>1601716221962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601716221962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +195,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=".gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
+    <MESSAGE value="Added React Wrapper" />
+    <MESSAGE value="UnversionedFiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="UnversionedFiles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="644" y="344" key="#Notifications" timestamp="1601710488821">
@@ -181,33 +220,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="221" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601161729" />
-    <state width="1901" height="282" key="GridCell.Tab.0.bottom" timestamp="1601715683778">
+    <state width="1901" height="249" key="GridCell.Tab.0.bottom" timestamp="1601859566623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601715683778" />
-    <state width="1901" height="282" key="GridCell.Tab.0.center" timestamp="1601715683778">
+    <state width="1901" height="249" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601859566623" />
+    <state width="1901" height="249" key="GridCell.Tab.0.center" timestamp="1601859566623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601715683778" />
-    <state width="1901" height="282" key="GridCell.Tab.0.left" timestamp="1601715683778">
+    <state width="1901" height="249" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601859566623" />
+    <state width="1901" height="249" key="GridCell.Tab.0.left" timestamp="1601859566623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601715683778" />
-    <state width="1901" height="282" key="GridCell.Tab.0.right" timestamp="1601715683778">
+    <state width="1901" height="249" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601859566623" />
+    <state width="1901" height="249" key="GridCell.Tab.0.right" timestamp="1601859566623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601715683778" />
+    <state width="1901" height="249" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601859566623" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1601601135167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601135167" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601601192503">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1601716223742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601192503" />
-    <state x="1920" y="-123" width="974" height="1028" maximized="true" key="dock-window-1" timestamp="1601714830709">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601716223742" />
+    <state x="1920" y="155" width="974" height="1028" maximized="true" key="dock-window-1" timestamp="1601859640875">
       <screen x="1920" y="-123" width="960" height="1496" />
     </state>
-    <state x="1920" y="-123" width="974" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601714830709" />
+    <state x="1920" y="155" width="974" height="1028" maximized="true" key="dock-window-1/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601859640875" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601853328843">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601853328843" />
   </component>
 </project>

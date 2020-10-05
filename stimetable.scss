@@ -37,6 +37,7 @@ body {
     font: inherit;
     margin: 0;
     padding: 0;
+    color: var(--st-text);
 }
 
 .st-text--primary {
@@ -123,6 +124,7 @@ body {
     padding: 0.25rem 0.5rem;
 }
 
+// TODO: MAke the input placeholder dimmer
 // inputs
 .st-input {
     padding: 1rem;
@@ -132,6 +134,12 @@ body {
 
     background-color: var(--st-background);
     border: 1px solid var(--st-secondary);
+
+    color: var(--st-text);
+
+    &::placeholder {
+        color: var(--st-text);
+    }
 
     &:hover {
         background-color: var(--st-background-focus);

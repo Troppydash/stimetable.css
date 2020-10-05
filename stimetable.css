@@ -30,6 +30,7 @@ body {
   font: inherit;
   margin: 0;
   padding: 0;
+  color: var(--st-text);
 }
 
 .st-text--primary {
@@ -104,6 +105,10 @@ body {
   font: inherit;
   background-color: var(--st-background);
   border: 1px solid var(--st-secondary);
+  color: var(--st-text);
+}
+.st-input::placeholder, .st-form .st-form__control .st-form__input::placeholder {
+  color: var(--st-text);
 }
 .st-input:hover, .st-form .st-form__control .st-form__input:hover {
   background-color: var(--st-background-focus);

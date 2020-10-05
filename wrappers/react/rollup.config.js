@@ -2,25 +2,18 @@ import typescript from 'rollup-plugin-typescript2';
 import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
+import multiInput from 'rollup-plugin-multi-input';
 
 import pkg from './package.json';
 
 export default {
-    input: 'src/index.tsx' ,
-    output: [
-        {
-            file: pkg.main ,
-            format: 'cjs' ,
-            exports: 'named' ,
-            sourcemap: true
-        } ,
-        {
-            file: pkg.module ,
-            format: 'es' ,
-            exports: 'named' ,
-            sourcemap: true
-        }
-    ] ,
+    input: ['src/**/*.tsx'] ,
+    output: {
+        format: 'esm',
+        dir: 'build',
+        exports: 'named' ,
+        sourcemap: true
+    },
     plugins: [
         external() ,
         resolve({
@@ -28,11 +21,12 @@ export default {
         }) ,
         typescript({
             rollupCommonJSResolveHack: true ,
-            exclude: ['**/__tests__/**'],
+            exclude: [],
             clean: true,
         }) ,
         commonjs({
             include: ['node_modules/**'] ,
-        })
+        }),
+        multiInput()
     ]
 };

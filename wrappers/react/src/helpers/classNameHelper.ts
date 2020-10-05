@@ -5,9 +5,9 @@ export function combiner( list: string[] ): string {
             final += className + ' ';
         }
     } );
-    return final.slice(0, -1);
+    return final.slice( 0, -1 );
 }
 
-export function optionalClassName( flag: boolean | undefined, className: string ): string {
+export function optionalClassName( flag: any | undefined, className: string ): string {
     return flag ? className : '';
 }
