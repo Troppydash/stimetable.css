@@ -1,8 +1,9 @@
 import React from 'react';
 
-import Button from "@stimetable.css/react/build/components/general/Button";
-import Text from "@stimetable.css/react/build/components/general/Text";
-import * as Form from "@stimetable.css/react/build/components/form/Form";
+import Button from "@stimetable.css/react/lib/components/Button";
+import Text from "@stimetable.css/react/lib/components/Text";
+import * as Form from "@stimetable.css/react/lib/components/Form";
+import Select, { Option } from "@stimetable.css/react/lib/components/Select";
 
 export default function App() {
     const [ text, setText ] = React.useState( 'Hello World' );
@@ -47,6 +48,15 @@ export default function App() {
             </div>
 
             <div>
+                <Text>{text}</Text>
+                <Select value={text} onChange={(e) => { setText(e.currentTarget.value)}}>
+                    <Option>Hello World</Option>
+                    <Option>yes</Option>
+                    <Option>no</Option>
+                </Select>
+            </div>
+
+            <div>
                 <Form.default>
                     <Form.Control small>
                         <Form.Label name="OneLiner" small>
@@ -58,10 +68,35 @@ export default function App() {
                             <Form.Input placeholder="Hello World" big />
                         </Form.Label>
                     </Form.Control>
+
                     <Form.Control>
                         <Form.Label name="Settings" settings>
                             <Form.Input placeholder="Hello World"/>
                         </Form.Label>
+                    </Form.Control>
+
+                    <Form.Control>
+                        <Form.Label name="Settings" settings>
+                            <Form.Select>
+                                <Form.Option>Yes</Form.Option>
+                                <Form.Option>No</Form.Option>
+                            </Form.Select>
+                        </Form.Label>
+                        <Form.Label name="Settings" settings>
+                            <Form.Select primary small>
+                                <Form.Option>Yes</Form.Option>
+                                <Form.Option>No</Form.Option>
+                            </Form.Select>
+                        </Form.Label>
+                        <Form.Label name="Settings" settings>
+                            <Form.Select secondary big>
+                                <Form.Option>Yes</Form.Option>
+                                <Form.Option>No</Form.Option>
+                            </Form.Select>
+                        </Form.Label>
+                    </Form.Control>
+                    <Form.Control>
+                        <Form.Submit primary>Submit</Form.Submit>
                     </Form.Control>
                 </Form.default>
             </div>

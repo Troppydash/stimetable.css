@@ -1,41 +1,30 @@
 {
   "name": "@stimetable.css/react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React Component Wrapper for stimetable.css",
-  "main": "build/index.js",
-  "jsnext:main": "build/index.es.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rollup -c",
-    "watch-build": "npm-watch build",
-    "run-dev": "cd example && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "watch": {
-    "build": {
-      "patterns": [
-        "src"
-      ],
-      "extensions": "ts,tsx"
-    }
+    "watch-build": "rollup -c --watch",
+    "run-dev": "cd example && npm run start"
   },
   "author": "Terry Qi <troppydash.developer@gmail.com>",
   "license": "MIT",
   "files": [
-    "build"
+    "lib"
   ],
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "dependencies": {
-    "stimetable.css": "0.0.4"
+    "stimetable.css": "0.0.5"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@types/react": "^16.9.50",
     "@types/react-dom": "^16.9.8",
-    "npm-watch": "^0.7.0",
     "rollup": "^2.28.2",
     "rollup-plugin-multi-input": "^1.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.3",

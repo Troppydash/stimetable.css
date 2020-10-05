@@ -11,7 +11,7 @@ export interface InputProps extends React.DetailedHTMLProps<React.InputHTMLAttri
 
 export function createInputComponent(prefix: string) {
     return ( props: React.PropsWithChildren<InputProps> ) => {
-        const { children, primary, secondary, big, small, medium, ...rest } = props;
+        const { children, primary, secondary, big, small, medium, className, ...rest } = props;
         return (
             <input className={combiner([
                 prefix,
@@ -20,6 +20,7 @@ export function createInputComponent(prefix: string) {
                 optionalClassName(big, prefix + '--big'),
                 optionalClassName(medium, prefix + '--medium'),
                 optionalClassName(small, prefix + '--small'),
+                optionalClassName(className)
             ])} {...rest}/>
         )
     }

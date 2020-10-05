@@ -1,19 +1,22 @@
 :root {
   --st-primary: #b82832;
-  --st-primary-focus: #9f222c;
-  --st-primary-active: #8f1f28;
+  --st-primary-hover: #b52732;
+  --st-primary-focus: #a72531;
   --st-primary-text: white;
+  --st-primary-text-dim: #dedede;
   --st-secondary: #6b6b6b;
-  --st-secondary-focus: #5b5a5a;
-  --st-secondary-active: #4c4c4c;
+  --st-secondary-hover: #656565;
+  --st-secondary-focus: #606060;
   --st-secondary-text: white;
+  --st-secondary-text-dim: #dedede;
   --st-dark: #4b4b4b;
   --st-light: #f2f2f2;
   --st-highlight: var(--st-light);
   --st-background: white;
-  --st-background-focus: #f6f6f6;
-  --st-background-active: #f1f0f0;
+  --st-background-hover: #fafafa;
+  --st-background-focus: #f4f4f4;
   --st-text: black;
+  --st-text-dim: #282828;
 }
 
 html,
@@ -52,10 +55,10 @@ body {
   outline: none;
 }
 .st-button:hover, .st-form .st-form__control .st-form__submit--medium:hover, .st-form .st-form__control .st-form__submit:hover {
-  background-color: var(--st-background-focus);
+  background-color: var(--st-background-hover);
 }
 .st-button:active, .st-form .st-form__control .st-form__submit--medium:active, .st-form .st-form__control .st-form__submit:active {
-  background-color: var(--st-background-active);
+  background-color: var(--st-background-focus);
   border: 1px solid var(--st-primary);
 }
 
@@ -65,12 +68,12 @@ body {
   border-color: var(--st-primary);
 }
 .st-button--primary:hover, .st-form .st-form__control .st-form__submit--primary:hover {
-  background-color: var(--st-primary-focus);
-  border: 1px solid var(--st-primary-focus);
+  background-color: var(--st-primary-hover);
+  border: 1px solid var(--st-primary-hover);
 }
 .st-button--primary:active, .st-form .st-form__control .st-form__submit--primary:active {
-  background-color: var(--st-primary-active);
-  border: 1px solid var(--st-primary-active);
+  background-color: var(--st-primary-focus);
+  border: 1px solid var(--st-primary-focus);
 }
 
 .st-button--secondary, .st-form .st-form__control .st-form__submit--secondary {
@@ -79,12 +82,12 @@ body {
   border-color: var(--st-secondary);
 }
 .st-button--secondary:hover, .st-form .st-form__control .st-form__submit--secondary:hover {
-  background-color: var(--st-secondary-focus);
-  border: 1px solid var(--st-secondary-focus);
+  background-color: var(--st-secondary-hover);
+  border: 1px solid var(--st-secondary-hover);
 }
 .st-button--secondary:active, .st-form .st-form__control .st-form__submit--secondary:active {
-  background-color: var(--st-secondary-active);
-  border: 1px solid var(--st-secondary-active);
+  background-color: var(--st-secondary-focus);
+  border: 1px solid var(--st-secondary-focus);
 }
 
 .st-button--big, .st-form .st-form__control .st-form__submit--big {
@@ -108,14 +111,15 @@ body {
   color: var(--st-text);
 }
 .st-input::placeholder, .st-form .st-form__control .st-form__input::placeholder {
-  color: var(--st-text);
+  color: var(--st-text-dim);
 }
 .st-input:hover, .st-form .st-form__control .st-form__input:hover {
-  background-color: var(--st-background-focus);
+  background-color: var(--st-background-hover);
 }
 .st-input:focus, .st-form .st-form__control .st-form__input:focus {
-  outline: none;
+  background-color: var(--st-background-focus);
   border: 1px solid var(--st-primary);
+  outline: none;
 }
 
 .st-input--primary, .st-form .st-form__control .st-form__input--primary {
@@ -124,9 +128,13 @@ body {
   border: 1px solid var(--st-primary);
 }
 .st-input--primary::placeholder, .st-form .st-form__control .st-form__input--primary::placeholder {
-  color: var(--st-primary-text);
+  color: var(--st-primary-text-dim);
 }
 .st-input--primary:hover, .st-form .st-form__control .st-form__input--primary:hover {
+  background-color: var(--st-primary-hover);
+  border: 1px solid var(--st-primary-hover);
+}
+.st-input--primary:focus, .st-form .st-form__control .st-form__input--primary:focus {
   background-color: var(--st-primary-focus);
   border: 1px solid var(--st-primary-focus);
 }
@@ -137,14 +145,15 @@ body {
   border: 1px solid var(--st-secondary);
 }
 .st-input--secondary::placeholder, .st-form .st-form__control .st-form__input--secondary::placeholder {
-  color: var(--st-secondary-text);
+  color: var(--st-secondary-text-dim);
 }
 .st-input--secondary:hover, .st-form .st-form__control .st-form__input--secondary:hover {
-  background-color: var(--st-secondary-focus);
-  border: 1px solid var(--st-secondary-focus);
+  background-color: var(--st-secondary-hover);
+  border: 1px solid var(--st-secondary-hover);
 }
 .st-input--secondary:focus, .st-form .st-form__control .st-form__input--secondary:focus {
-  border: 1px solid var(--st-secondary);
+  background-color: var(--st-secondary-focus);
+  border: 1px solid var(--st-secondary-focus);
 }
 
 .st-input--big, .st-form .st-form__control .st-form__input--big {
@@ -164,12 +173,8 @@ body {
 
 .st-select, .st-form .st-form__control .st-form__select {
   width: auto;
-  padding: 0.45rem 1.25rem 0.5rem;
-  height: 3rem;
+  padding: 0.2rem;
   font: inherit;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background: var(--st-background);
   color: var(--st-text);
   text-align: center;
@@ -181,7 +186,12 @@ body {
   color: var(--st-text);
 }
 .st-select:hover, .st-form .st-form__control .st-form__select:hover {
-  background: var(--st-background-focus);
+  background: var(--st-background-hover);
+}
+.st-select:focus, .st-form .st-form__control .st-form__select:focus {
+  background: var(--st-background-hover);
+  border: 1px solid var(--st-primary);
+  outline: none;
 }
 
 .st-select--primary, .st-form .st-form__control .st-form__select--primary {
@@ -190,12 +200,16 @@ body {
   border-color: var(--st-primary);
 }
 .st-select--primary:hover, .st-form .st-form__control .st-form__select--primary:hover {
-  background: var(--st-primary-focus);
-  border-color: var(--st-primary-focus);
+  background: var(--st-primary-hover);
+  border-color: var(--st-primary-hover);
 }
 .st-select--primary > option, .st-form .st-form__control .st-form__select--primary > option {
-  background: var(--st-primary-focus);
+  background: var(--st-primary-hover);
   color: var(--st-primary-text);
+}
+.st-select--primary:focus, .st-form .st-form__control .st-form__select--primary:focus {
+  background: var(--st-primary-focus);
+  border: 1px solid var(--st-primary-focus);
 }
 
 .st-select--secondary, .st-form .st-form__control .st-form__select--secondary {
@@ -204,27 +218,28 @@ body {
   border-color: var(--st-secondary);
 }
 .st-select--secondary:hover, .st-form .st-form__control .st-form__select--secondary:hover {
-  background: var(--st-secondary-focus);
-  border-color: var(--st-secondary-focus);
+  background: var(--st-secondary-hover);
+  border-color: var(--st-secondary-hover);
 }
 .st-select--secondary > option, .st-form .st-form__control .st-form__select--secondary > option {
-  background: var(--st-secondary-focus);
+  background: var(--st-secondary-hover);
   color: var(--st-secondary-text);
+}
+.st-select--secondary:focus, .st-form .st-form__control .st-form__select--secondary:focus {
+  background: var(--st-secondary-hover);
+  border: 1px solid var(--st-secondary-hover);
 }
 
 .st-select--small, .st-form .st-form__control .st-form__select--small {
-  padding: 0.45rem 0.75rem 0.5rem;
-  height: 2rem;
+  padding: 0.1rem;
 }
 
 .st-select--medium, .st-form .st-form__control .st-form__select--medium {
-  padding: 0.45rem 1.25rem 0.5rem;
-  height: 3rem;
+  padding: 0.2rem;
 }
 
 .st-select--big, .st-form .st-form__control .st-form__select--big {
-  padding: 0.45rem 1.75rem 0.5rem;
-  height: 4.25rem;
+  padding: 0.3rem;
 }
 
 .st-form {

@@ -6,26 +6,28 @@ type HexColor = string;
 /// A Series Variants of a color
 interface ColorPalette {
     unchanged: HexColor,
+    hover: HexColor,
     focus: HexColor,
-    active: HexColor,
     text: HexColor,
+    textDimmed: HexColor,
 }
 
 /**
  * Shorthand way of creating a color palette
  * @param unchanged Unchanged HexColor
- * @param focus Focused HexColor
- * @param active Active HexColor
+ * @param hover Hover HexColor
+ * @param focus Focus HexColor
  * @param text Text HexColor
  * @returns ColorPalette Resulting ColorPalette
  * @constructor
  */
-export function CreateColorPalette( unchanged: HexColor, focus: HexColor, active: HexColor, text: HexColor ): ColorPalette {
+export function CreateColorPalette( unchanged: HexColor, hover: HexColor, focus: HexColor, text: HexColor, textDimmed: HexColor ): ColorPalette {
     return {
         unchanged,
+        hover,
         focus,
-        active,
-        text
+        text,
+        textDimmed
     }
 }
 
@@ -33,9 +35,10 @@ export function CreateColorPalette( unchanged: HexColor, focus: HexColor, active
 function generateColorPaletteStyles( theme: ColorPalette, prefix: string ): object {
     return {
         [`--st-${prefix}`]: theme.unchanged,
+        [`--st-${prefix}-hover`]: theme.hover,
         [`--st-${prefix}-focus`]: theme.focus,
-        [`--st-${prefix}-active`]: theme.active,
         [`--st-${prefix}-text`]: theme.text,
+        [`--st-${prefix}-text-dim`]: theme.textDimmed,
     }
 }
 
@@ -52,7 +55,8 @@ function generateColorThemeStyles( theme: ColorTheme ): object {
         ...generateColorPaletteStyles( theme.primary, "primary" ),
         ...generateColorPaletteStyles( theme.secondary, "secondary" ),
         ...generateColorPaletteStyles( theme.background, "background" ),
-        '--st-text': theme.background.text
+        '--st-text': theme.background.text,
+        '--st-text-dim': theme.background.textDimmed,
     }
 }
 

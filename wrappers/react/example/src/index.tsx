@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { ThemeProvider } from '@stimetable.css/react';
+import '@stimetable.css/react/lib';
+import * as ThemeProvider from '@stimetable.css/react/lib/provider';
 
 ReactDOM.render(
     <React.StrictMode>
         <ThemeProvider.Provider theme={{
-            primary: ThemeProvider.CreateColorPalette( "#b82832", "#9f222c", "#8f1f28", "white" ),
-            secondary: ThemeProvider.CreateColorPalette( "#6b6b6b", "#5b5a5a", "#4c4c4c", "white" ),
-            background: ThemeProvider.CreateColorPalette( "#282828", "#323232", "#3c3c3c", "white" ),
+            primary: ThemeProvider.CreateColorPalette( "#b82832", "#9f222c", "#8f1f28", "white", '#bbb' ),
+            secondary: ThemeProvider.CreateColorPalette( "#6b6b6b", "#5b5a5a", "#4c4c4c", "white", '#bbb' ),
+            background: ThemeProvider.CreateColorPalette( "#282828", "#323232", "#3c3c3c", "white", '#bbb' ),
         }}>
             <App />
         </ThemeProvider.Provider>

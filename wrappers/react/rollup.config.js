@@ -7,26 +7,24 @@ import multiInput from 'rollup-plugin-multi-input';
 import pkg from './package.json';
 
 export default {
-    input: ['src/**/*.tsx'] ,
+    input: ['src/**/*.ts', 'src/**/*.tsx'] ,
     output: {
-        format: 'esm',
-        dir: 'build',
-        exports: 'named' ,
-        sourcemap: true
-    },
+        format: 'esm' ,
+        dir: 'lib' ,
+    } ,
     plugins: [
         external() ,
         resolve({
-            modulesOnly: true
+            modulesOnly: true ,
         }) ,
         typescript({
             rollupCommonJSResolveHack: true ,
-            exclude: [],
-            clean: true,
+            exclude: [] ,
+            clean: true ,
         }) ,
         commonjs({
             include: ['node_modules/**'] ,
-        }),
+        }) ,
         multiInput()
     ]
 };

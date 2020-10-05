@@ -17,7 +17,7 @@ export interface TextProps extends React.DetailedHTMLProps<React.HTMLAttributes<
 
 /// Styled Text
 function Text( props: React.PropsWithChildren<TextProps> ) {
-    const { primary, secondary, big, medium, small, children, inline, scaling, ...rest } = props;
+    const { primary, secondary, big, medium, small, children, inline, scaling, className, ...rest } = props;
     // TODO: This toggle might be costly
     return (
         <>{
@@ -30,6 +30,7 @@ function Text( props: React.PropsWithChildren<TextProps> ) {
                     optionalClassName( medium, 'st-text--medium' ),
                     optionalClassName( small, 'st-text--small' ),
                     optionalClassName( scaling, `st-text--${scaling}` ),
+                    optionalClassName( className ),
                 ] )} {...rest}>
                     {children}
                 </span>
@@ -42,6 +43,7 @@ function Text( props: React.PropsWithChildren<TextProps> ) {
                     optionalClassName( medium, 'st-text--medium' ),
                     optionalClassName( small, 'st-text--small' ),
                     optionalClassName( scaling, `st-text--${scaling}` ),
+                    optionalClassName( className ),
                 ] )} {...rest}>
                     {children}
                 </p>
@@ -50,4 +52,4 @@ function Text( props: React.PropsWithChildren<TextProps> ) {
     )
 }
 
-export default React.memo(Text);
+export default React.memo( Text );

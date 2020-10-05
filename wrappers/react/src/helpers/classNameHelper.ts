@@ -8,6 +8,6 @@ export function combiner( list: string[] ): string {
     return final.slice( 0, -1 );
 }
 
-export function optionalClassName( flag: any | undefined, className: string ): string {
+export function optionalClassName( flag: any | undefined, className: string = flag ): string {
     return flag ? className : '';
 }
