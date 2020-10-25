@@ -51,7 +51,6 @@ body {
     color: var(--st-secondary);
 }
 
-
 // buttons
 .st-button {
     padding: 0.5rem 1rem;
@@ -78,35 +77,53 @@ body {
 }
 
 .st-button--primary {
-    background-color: var(--st-primary);
-    color: var(--st-primary-text);
     border-color: var(--st-primary);
 
     &:hover {
-        background-color: var(--st-primary-hover);
         border: 1px solid var(--st-primary-hover);
     }
 
     &:active {
-        background-color: var(--st-primary-focus);
         border: 1px solid var(--st-primary-focus);
+    }
+
+    &.st-button--fill {
+        background-color: var(--st-primary);
+        color: var(--st-primary-text);
+
+        &:hover {
+            background-color: var(--st-primary-hover);
+        }
+
+        &:active {
+            background-color: var(--st-primary-focus);
+        }
     }
 }
 
 .st-button--secondary {
-    background-color: var(--st-secondary);
-    color: var(--st-secondary-text);
     border-color: var(--st-secondary);
 
 
     &:hover {
-        background-color: var(--st-secondary-hover);
         border: 1px solid var(--st-secondary-hover);
     }
 
     &:active {
-        background-color: var(--st-secondary-focus);
         border: 1px solid var(--st-secondary-focus);
+    }
+
+    &.st-button--fill {
+        background-color: var(--st-secondary);
+        color: var(--st-secondary-text);
+
+        &:hover {
+            background-color: var(--st-secondary-hover);
+        }
+
+        &:active {
+            background-color: var(--st-secondary-focus);
+        }
     }
 }
 
@@ -127,7 +144,6 @@ body {
     padding: 0.25rem 0.5rem;
 }
 
-// TODO: MAke the input placeholder dimmer
 // inputs
 .st-input {
     padding: 1rem;
@@ -156,42 +172,60 @@ body {
 }
 
 .st-input--primary {
-    background-color: var(--st-primary);
-    color: var(--st-primary-text);
     border: 1px solid var(--st-primary);
 
-    &::placeholder {
-        color: var(--st-primary-text-dim);
-    }
-
     &:hover {
-        background-color: var(--st-primary-hover);
         border: 1px solid var(--st-primary-hover);
     }
 
     &:focus {
-        background-color: var(--st-primary-focus);
         border: 1px solid var(--st-primary-focus);
+    }
+
+    &.st-input--fill {
+        background-color: var(--st-primary);
+        color: var(--st-primary-text);
+
+        &::placeholder {
+            color: var(--st-primary-text-dim);
+        }
+
+        &:hover {
+            background-color: var(--st-primary-hover);
+        }
+
+        &:focus {
+            background-color: var(--st-primary-focus);
+        }
     }
 }
 
 .st-input--secondary {
-    background-color: var(--st-secondary);
-    color: var(--st-secondary-text);
     border: 1px solid var(--st-secondary);
 
-    &::placeholder {
-        color: var(--st-secondary-text-dim);
-    }
-
     &:hover {
-        background-color: var(--st-secondary-hover);
         border: 1px solid var(--st-secondary-hover);
     }
 
     &:focus {
-        background-color: var(--st-secondary-focus);
         border: 1px solid var(--st-secondary-focus);
+    }
+
+    &.st-input--fill {
+        background-color: var(--st-secondary);
+        color: var(--st-secondary-text);
+
+        &::placeholder {
+            color: var(--st-secondary-text-dim);
+        }
+
+        &:hover {
+            background-color: var(--st-secondary-hover);
+        }
+
+        &:focus {
+            background-color: var(--st-secondary-focus);
+        }
     }
 }
 
@@ -243,44 +277,63 @@ body {
 }
 
 .st-select--primary {
-    background: var(--st-primary);
-    color: var(--st-primary-text);
     border-color: var(--st-primary);
 
     &:hover {
-        background: var(--st-primary-hover);
         border-color: var(--st-primary-hover);
     }
 
-    & > option {
-        background: var(--st-primary-hover);
-        color: var(--st-primary-text);
-    }
-
     &:focus {
-        background: var(--st-primary-focus);
         border: 1px solid var(--st-primary-focus);
     }
+
+    &.st-select--fill {
+        background: var(--st-primary);
+        color: var(--st-primary-text);
+
+        &:hover {
+            background: var(--st-primary-hover);
+        }
+
+        & > option {
+            background: var(--st-primary-hover);
+            color: var(--st-primary-text);
+        }
+
+        &:focus {
+            background: var(--st-primary-focus);
+        }
+    }
+
 }
 
 .st-select--secondary {
-    background: var(--st-secondary);
-    color: var(--st-secondary-text);
     border-color: var(--st-secondary);
 
     &:hover {
-        background: var(--st-secondary-hover);
         border-color: var(--st-secondary-hover);
     }
 
-    & > option {
-        background: var(--st-secondary-hover);
-        color: var(--st-secondary-text);
+    &:focus {
+        border: 1px solid var(--st-secondary-hover);
     }
 
-    &:focus {
-        background: var(--st-secondary-hover);
-        border: 1px solid var(--st-secondary-hover);
+    &.st-select--fill {
+        background: var(--st-secondary);
+        color: var(--st-secondary-text);
+
+        &:hover {
+            background: var(--st-secondary-hover);
+        }
+
+        & > option {
+            background: var(--st-secondary-hover);
+            color: var(--st-secondary-text);
+        }
+
+        &:focus {
+            background: var(--st-secondary-hover);
+        }
     }
 }
 
@@ -350,12 +403,21 @@ body {
 
         .st-form__input--primary {
             @extend .st-input--primary;
+
+            &.st-form__input--fill {
+                @extend .st-input--fill
+            }
         }
 
         .st-form__input--secondary {
             @extend .st-input--secondary;
+
+            &.st-form__input--fill {
+                @extend .st-input--fill
+            }
         }
 
+        // Form Input
         .st-form__input--big {
             @extend .st-input--big;
         }
@@ -368,16 +430,25 @@ body {
             @extend .st-input--small;
         }
 
+        // Form Select
         .st-form__select {
             @extend .st-select;
         }
 
-        .st-form__select--secondary {
-            @extend .st-select--secondary;
-        }
-
         .st-form__select--primary {
             @extend .st-select--primary;
+
+            &.st-form__select--fill {
+                @extend .st-select--fill
+            }
+        }
+
+        .st-form__select--secondary {
+            @extend .st-select--secondary;
+
+            &.st-form__select--fill {
+                @extend .st-select--fill
+            }
         }
 
         .st-form__select--small {
@@ -392,6 +463,7 @@ body {
             @extend .st-select--big;
         }
 
+        // Form Submit
         .st-form__submit {
             @extend .st-button;
             min-width: 200px;
@@ -399,10 +471,18 @@ body {
 
         .st-form__submit--primary {
             @extend .st-button--primary;
+
+            &.st-form__submit--fill {
+                @extend .st-button--fill
+            }
         }
 
         .st-form__submit--secondary {
             @extend .st-button--secondary;
+
+            &.st-form__submit--fill {
+                @extend .st-button--fill
+            }
         }
 
         .st-form__submit--big {
@@ -419,11 +499,11 @@ body {
             @extend .st-button--small;
             min-width: 100px;
         }
-
     }
 
     .st-form__control--small {
         margin: 0.5rem 0;
+
         & > .st-form__label {
             padding: 0.05rem 0;
         }
@@ -431,6 +511,7 @@ body {
 
     .st-form__control--big {
         margin: 1.5rem 0;
+
         & > .st-form__label {
             padding: 0.75rem 0;
         }
@@ -438,10 +519,140 @@ body {
 
 }
 
-// misc
-a[href] {
+// tables
+.st-table {
+    border-collapse: collapse;
+    text-align: left;
+    cursor: pointer;
 
+    thead {
+        tr {
+            th {
+                padding: 0.6rem 1rem;
+                font-weight: normal;
+                font-size: 1.25rem;
+            }
+
+            border-width: 2px;
+        }
+    }
+
+
+    tr {
+        border-bottom: 1px solid var(--st-text);
+    }
+
+    tbody {
+        font-family: Roboto, sans-serif;
+        tr {
+            td {
+                padding: 1rem;
+            }
+
+            &:hover {
+                background: var(--st-background-hover);
+            }
+        }
+    }
+
+    // nested styles
+
+    &.st-table--full {
+        width: 100%;
+    }
+
+    &.st-table--small {
+        thead {
+            tr {
+                th {
+                    padding: 0.45rem 0.5rem;
+                    font-size: 1.15rem;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 0.7rem 0.5rem;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    &.st-table--medium {
+        thead {
+            tr {
+                th {
+                    padding: 0.6rem 1rem;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    &.st-table--big {
+        thead {
+            tr {
+                th {
+                    padding: 0.8rem 2.25rem;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 1.25rem 2.25rem;
+                }
+            }
+        }
+    }
+
+    &.st-table--primary {
+        thead {
+            tr {
+                th {
+                    background: var(--st-primary);
+                    color: var(--st-primary-text);
+                }
+
+                border-bottom: none;
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid var(--st-primary);
+        }
+    }
+
+    &.st-table--secondary {
+        thead {
+            tr {
+                th {
+                    background: var(--st-secondary);
+                    color: var(--st-secondary-text);
+                }
+
+                border-bottom: none;
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid var(--st-secondary);
+        }
+    }
 }
+
+
 
 // text size
 .st-text--big {
@@ -458,44 +669,44 @@ a[href] {
 
 // text detail size
 // @formatter:off
-.st-text--10 { font-size: 0.1rem; }
-.st-text--20 { font-size: 0.2rem; }
-.st-text--30 { font-size: 0.3rem; }
-.st-text--40 { font-size: 0.4rem; }
-.st-text--50 { font-size: 0.5rem; }
-.st-text--60 { font-size: 0.6rem; }
-.st-text--70 { font-size: 0.7rem; }
-.st-text--80 { font-size: 0.8rem; }
-.st-text--90 { font-size: 0.9rem; }
-.st-text--100 { font-size: 1.0rem; }
-.st-text--110 { font-size: 1.1rem; }
-.st-text--120 { font-size: 1.2rem; }
-.st-text--130 { font-size: 1.3rem; }
-.st-text--140 { font-size: 1.4rem; }
-.st-text--150 { font-size: 1.5rem; }
-.st-text--160 { font-size: 1.6rem; }
-.st-text--170 { font-size: 1.7rem; }
-.st-text--180 { font-size: 1.8rem; }
-.st-text--190 { font-size: 1.9rem; }
-.st-text--200 { font-size: 2.0rem; }
-.st-text--210 { font-size: 2.1rem; }
-.st-text--220 { font-size: 2.2rem; }
-.st-text--230 { font-size: 2.3rem; }
-.st-text--240 { font-size: 2.4rem; }
-.st-text--250 { font-size: 2.5rem; }
-.st-text--260 { font-size: 2.6rem; }
-.st-text--270 { font-size: 2.7rem; }
-.st-text--280 { font-size: 2.8rem; }
-.st-text--290 { font-size: 2.9rem; }
-.st-text--300 { font-size: 3.0rem; }
-.st-text--310 { font-size: 3.1rem; }
-.st-text--320 { font-size: 3.2rem; }
-.st-text--330 { font-size: 3.3rem; }
-.st-text--340 { font-size: 3.4rem; }
-.st-text--350 { font-size: 3.5rem; }
-.st-text--360 { font-size: 3.6rem; }
-.st-text--370 { font-size: 3.7rem; }
-.st-text--380 { font-size: 3.8rem; }
-.st-text--390 { font-size: 3.9rem; }
-.st-text--400 { font-size: 4.0rem; }
+.st-text--10 { font-size: 0.1rem !important; }
+.st-text--20 { font-size: 0.2rem !important; }
+.st-text--30 { font-size: 0.3rem !important; }
+.st-text--40 { font-size: 0.4rem !important; }
+.st-text--50 { font-size: 0.5rem !important; }
+.st-text--60 { font-size: 0.6rem !important; }
+.st-text--70 { font-size: 0.7rem !important; }
+.st-text--80 { font-size: 0.8rem !important; }
+.st-text--90 { font-size: 0.9rem !important; }
+.st-text--100 { font-size: 1.0rem !important; }
+.st-text--110 { font-size: 1.1rem !important; }
+.st-text--120 { font-size: 1.2rem !important; }
+.st-text--130 { font-size: 1.3rem !important; }
+.st-text--140 { font-size: 1.4rem !important; }
+.st-text--150 { font-size: 1.5rem !important; }
+.st-text--160 { font-size: 1.6rem !important; }
+.st-text--170 { font-size: 1.7rem !important; }
+.st-text--180 { font-size: 1.8rem !important; }
+.st-text--190 { font-size: 1.9rem !important; }
+.st-text--200 { font-size: 2.0rem !important; }
+.st-text--210 { font-size: 2.1rem !important; }
+.st-text--220 { font-size: 2.2rem !important; }
+.st-text--230 { font-size: 2.3rem !important; }
+.st-text--240 { font-size: 2.4rem !important; }
+.st-text--250 { font-size: 2.5rem !important; }
+.st-text--260 { font-size: 2.6rem !important; }
+.st-text--270 { font-size: 2.7rem !important; }
+.st-text--280 { font-size: 2.8rem !important; }
+.st-text--290 { font-size: 2.9rem !important; }
+.st-text--300 { font-size: 3.0rem !important; }
+.st-text--310 { font-size: 3.1rem !important; }
+.st-text--320 { font-size: 3.2rem !important; }
+.st-text--330 { font-size: 3.3rem !important; }
+.st-text--340 { font-size: 3.4rem !important; }
+.st-text--350 { font-size: 3.5rem !important; }
+.st-text--360 { font-size: 3.6rem !important; }
+.st-text--370 { font-size: 3.7rem !important; }
+.st-text--380 { font-size: 3.8rem !important; }
+.st-text--390 { font-size: 3.9rem !important; }
+.st-text--400 { font-size: 4.0rem !important; }
 // @formatter:on

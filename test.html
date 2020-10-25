@@ -44,6 +44,12 @@
     <button class="st-button st-button--primary">Primary</button>
     <button class="st-button st-button--secondary">Secondary</button>
 
+    <br />
+    <br />
+
+    <button class="st-button st-button--primary st-button--fill">Primary Fill</button>
+    <button class="st-button st-button--secondary st-button--fill">Secondary Fill</button>
+
     <p class="st-text st-text--250" style="margin: 1rem 0">button sizes</p>
     <button class="st-button st-button--small">Small</button>
     <button class="st-button st-button--medium">Medium</button>
@@ -58,7 +64,13 @@
     <input class="st-input st-input--primary" placeholder="Primary" />
     <br />
     <br />
+    <input class="st-input st-input--primary st-input--fill" placeholder="Primary Fill" />
+    <br />
+    <br />
     <input class="st-input st-input--secondary" placeholder="Secondary" />
+    <br />
+    <br />
+    <input class="st-input st-input--secondary st-input--fill" placeholder="Secondary Fill" />
 
     <p class="st-text st-text--250" style="margin: 1rem 0">input sizes</p>
     <input class="st-input st-input--small" placeholder="Small" />
@@ -72,8 +84,28 @@
 </div>
 <div>
 
-    <p class="st-text st-text--250" style="margin: 1rem 0">select sizes</p>
+    <p class="st-text st-text--250" style="margin: 1rem 0">select color and sizes</p>
     <select class="st-select">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <select class="st-select st-select--primary">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <select class="st-select st-select--primary st-select--fill">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <select class="st-select st-select--secondary">
+        <option>test1</option>
+        <option>test2</option>
+        <option>test3</option>
+    </select>
+    <select class="st-select st-select--secondary st-select--fill">
         <option>test1</option>
         <option>test2</option>
         <option>test3</option>
@@ -163,6 +195,14 @@
                 <span>FullOneLiner:</span>
                 <input class="st-form__input" placeholder="input" />
             </label>
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input st-form__input--primary" placeholder="input" />
+            </label>
+            <label class="st-form__label st-form__label--full">
+                <span>FullOneLiner:</span>
+                <input class="st-form__input st-form__input--primary st-form__input--fill" placeholder="input" />
+            </label>
             <label class="st-form__label st-form__label--multi st-form__label--full">
                 <span>FullMulti:</span>
                 <input class="st-form__input" placeholder="input" />
@@ -189,6 +229,14 @@
             <label class="st-form__label st-form__label--settings">
                 <span>SelectPrimary:</span>
                 <select class="st-form__select st-form__select--primary">
+                    <option>test1</option>
+                    <option>test2</option>
+                    <option>test3</option>
+                </select>
+            </label>
+            <label class="st-form__label st-form__label--settings">
+                <span>SelectPrimaryFill:</span>
+                <select class="st-form__select st-form__select--primary st-form__select--fill">
                     <option>test1</option>
                     <option>test2</option>
                     <option>test3</option>
@@ -293,8 +341,14 @@
             <button class="st-form__submit" type="submit">Submit</button>
             <button class="st-form__submit st-form__submit--primary" type="submit">Submit</button>
             <button class="st-form__submit st-form__submit--secondary" type="submit">Submit</button>
-
         </div>
+
+        <div class="st-form__control">
+            <button class="st-form__submit st-form__submit--primary st-form__submit--fill" type="submit">Submit</button>
+            <button class="st-form__submit st-form__submit--secondary st-form__submit--fill" type="submit">Submit
+            </button>
+        </div>
+
         <div class="st-form__control">
             <button class="st-form__submit st-form__submit--small" type="submit">Submit</button>
             <button class="st-form__submit st-form__submit--medium" type="submit">Submit</button>
@@ -304,17 +358,252 @@
     </form>
 </div>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div>
+    <p class="st-text st-text--250" style="margin: 1rem 0">tables</p>
+
+    <table class="st-table">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--full">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--small">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--big">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--primary">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--secondary">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+    <table class="st-table st-table--secondary st-table--full st-table--big">
+        <thead>
+        <tr>
+            <th>Hello</th>
+            <th>World</th>
+            <th>World</th>
+            <th>World</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>World</td>
+            <td>World</td>
+            <td>World</td>
+        </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 
 </body>
