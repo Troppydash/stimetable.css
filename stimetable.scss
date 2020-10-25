@@ -27,7 +27,6 @@
 html,
 body {
     font-family: "Roboto Light", sans-serif;
-    font-size: 1rem;
 }
 
 // defaults
@@ -41,15 +40,17 @@ body {
     margin: 0;
     padding: 0;
     color: var(--st-text);
+
+    // nested
+    &.st-text--primary {
+        color: var(--st-primary);
+    }
+
+    &.st-text--secondary {
+        color: var(--st-secondary);
+    }
 }
 
-.st-text--primary {
-    color: var(--st-primary);
-}
-
-.st-text--secondary {
-    color: var(--st-secondary);
-}
 
 // buttons
 .st-button {
@@ -74,75 +75,77 @@ body {
         background-color: var(--st-background-focus);
         border: 1px solid var(--st-primary);
     }
-}
 
-.st-button--primary {
-    border-color: var(--st-primary);
-
-    &:hover {
-        border: 1px solid var(--st-primary-hover);
-    }
-
-    &:active {
-        border: 1px solid var(--st-primary-focus);
-    }
-
-    &.st-button--fill {
-        background-color: var(--st-primary);
-        color: var(--st-primary-text);
+    // nested
+    &.st-button--primary {
+        border-color: var(--st-primary);
 
         &:hover {
-            background-color: var(--st-primary-hover);
+            border: 1px solid var(--st-primary-hover);
         }
 
         &:active {
-            background-color: var(--st-primary-focus);
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-button--fill {
+            background-color: var(--st-primary);
+            color: var(--st-primary-text);
+
+            &:hover {
+                background-color: var(--st-primary-hover);
+            }
+
+            &:active {
+                background-color: var(--st-primary-focus);
+            }
         }
     }
-}
 
-.st-button--secondary {
-    border-color: var(--st-secondary);
+    &.st-button--secondary {
+        border-color: var(--st-secondary);
 
-
-    &:hover {
-        border: 1px solid var(--st-secondary-hover);
-    }
-
-    &:active {
-        border: 1px solid var(--st-secondary-focus);
-    }
-
-    &.st-button--fill {
-        background-color: var(--st-secondary);
-        color: var(--st-secondary-text);
 
         &:hover {
-            background-color: var(--st-secondary-hover);
+            border: 1px solid var(--st-secondary-hover);
         }
 
         &:active {
-            background-color: var(--st-secondary-focus);
+            border: 1px solid var(--st-secondary-focus);
         }
+
+        &.st-button--fill {
+            background-color: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &:hover {
+                background-color: var(--st-secondary-hover);
+            }
+
+            &:active {
+                background-color: var(--st-secondary-focus);
+            }
+        }
+    }
+
+    // button modifiers
+    &.st-button--big {
+        @extend .st-text--big;
+        padding: 0.75rem 1.5rem;
+    }
+
+    &.st-button--medium {
+        @extend .st-text--medium;
+        padding: 0.5rem 1rem;
+    }
+
+    &.st-button--small {
+        @extend .st-text--small;
+
+        padding: 0.25rem 0.5rem;
     }
 }
 
-// button modifiers
-.st-button--big {
-    @extend .st-text--big;
-    padding: 0.75rem 1.5rem;
-}
-
-.st-button--medium {
-    @extend .st-text--medium;
-    padding: 0.5rem 1rem;
-}
-
-.st-button--small {
-    @extend .st-text--small;
-
-    padding: 0.25rem 0.5rem;
-}
 
 // inputs
 .st-input {
@@ -169,83 +172,84 @@ body {
         border: 1px solid var(--st-primary);
         outline: none;
     }
-}
 
-.st-input--primary {
-    border: 1px solid var(--st-primary);
-
-    &:hover {
-        border: 1px solid var(--st-primary-hover);
-    }
-
-    &:focus {
-        border: 1px solid var(--st-primary-focus);
-    }
-
-    &.st-input--fill {
-        background-color: var(--st-primary);
-        color: var(--st-primary-text);
-
-        &::placeholder {
-            color: var(--st-primary-text-dim);
-        }
+    // nested
+    &.st-input--primary {
+        border: 1px solid var(--st-primary);
 
         &:hover {
-            background-color: var(--st-primary-hover);
+            border: 1px solid var(--st-primary-hover);
         }
 
         &:focus {
-            background-color: var(--st-primary-focus);
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-input--fill {
+            background-color: var(--st-primary);
+            color: var(--st-primary-text);
+
+            &::placeholder {
+                color: var(--st-primary-text-dim);
+            }
+
+            &:hover {
+                background-color: var(--st-primary-hover);
+            }
+
+            &:focus {
+                background-color: var(--st-primary-focus);
+            }
         }
     }
-}
 
-.st-input--secondary {
-    border: 1px solid var(--st-secondary);
-
-    &:hover {
-        border: 1px solid var(--st-secondary-hover);
-    }
-
-    &:focus {
-        border: 1px solid var(--st-secondary-focus);
-    }
-
-    &.st-input--fill {
-        background-color: var(--st-secondary);
-        color: var(--st-secondary-text);
-
-        &::placeholder {
-            color: var(--st-secondary-text-dim);
-        }
+    &.st-input--secondary {
+        border: 1px solid var(--st-secondary);
 
         &:hover {
-            background-color: var(--st-secondary-hover);
+            border: 1px solid var(--st-secondary-hover);
         }
 
         &:focus {
-            background-color: var(--st-secondary-focus);
+            border: 1px solid var(--st-secondary-focus);
+        }
+
+        &.st-input--fill {
+            background-color: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &::placeholder {
+                color: var(--st-secondary-text-dim);
+            }
+
+            &:hover {
+                background-color: var(--st-secondary-hover);
+            }
+
+            &:focus {
+                background-color: var(--st-secondary-focus);
+            }
         }
     }
-}
 
-// input sizes
-.st-input--big {
-    @extend .st-text--big;
-    padding: 1rem 1rem;
-    height: 4rem;
-}
+    // input sizes
+    &.st-input--big {
+        @extend .st-text--big;
+        padding: 1rem 1rem;
+        height: 4rem;
+    }
 
-.st-input--medium {
-    @extend .st-text--medium;
-    padding: 1rem;
-    height: 3rem;
-}
+    &.st-input--medium {
+        @extend .st-text--medium;
+        padding: 1rem;
+        height: 3rem;
+    }
 
-.st-input--small {
-    @extend .st-text--small;
-    padding: 0.5rem;
-    height: 2rem;
+    &.st-input--small {
+        @extend .st-text--small;
+        padding: 0.5rem;
+        height: 2rem;
+    }
 }
 
 .st-select {
@@ -274,82 +278,84 @@ body {
         border: 1px solid var(--st-primary);
         outline: none;
     }
-}
 
-.st-select--primary {
-    border-color: var(--st-primary);
+    // nested
 
-    &:hover {
-        border-color: var(--st-primary-hover);
-    }
-
-    &:focus {
-        border: 1px solid var(--st-primary-focus);
-    }
-
-    &.st-select--fill {
-        background: var(--st-primary);
-        color: var(--st-primary-text);
+    &.st-select--primary {
+        border-color: var(--st-primary);
 
         &:hover {
-            background: var(--st-primary-hover);
+            border-color: var(--st-primary-hover);
         }
 
-        & > option {
-            background: var(--st-primary-hover);
+        &:focus {
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-select--fill {
+            background: var(--st-primary);
             color: var(--st-primary-text);
+
+            &:hover {
+                background: var(--st-primary-hover);
+            }
+
+            & > option {
+                background: var(--st-primary-hover);
+                color: var(--st-primary-text);
+            }
+
+            &:focus {
+                background: var(--st-primary-focus);
+            }
         }
 
-        &:focus {
-            background: var(--st-primary-focus);
-        }
     }
 
-}
-
-.st-select--secondary {
-    border-color: var(--st-secondary);
-
-    &:hover {
-        border-color: var(--st-secondary-hover);
-    }
-
-    &:focus {
-        border: 1px solid var(--st-secondary-hover);
-    }
-
-    &.st-select--fill {
-        background: var(--st-secondary);
-        color: var(--st-secondary-text);
+    &.st-select--secondary {
+        border-color: var(--st-secondary);
 
         &:hover {
-            background: var(--st-secondary-hover);
-        }
-
-        & > option {
-            background: var(--st-secondary-hover);
-            color: var(--st-secondary-text);
+            border-color: var(--st-secondary-hover);
         }
 
         &:focus {
-            background: var(--st-secondary-hover);
+            border: 1px solid var(--st-secondary-hover);
+        }
+
+        &.st-select--fill {
+            background: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &:hover {
+                background: var(--st-secondary-hover);
+            }
+
+            & > option {
+                background: var(--st-secondary-hover);
+                color: var(--st-secondary-text);
+            }
+
+            &:focus {
+                background: var(--st-secondary-hover);
+            }
         }
     }
-}
 
-.st-select--small {
-    @extend .st-text--small;
-    padding: 0.1rem;
-}
+    &.st-select--small {
+        @extend .st-text--small;
+        padding: 0.1rem;
+    }
 
-.st-select--medium {
-    @extend .st-text--medium;
-    padding: 0.2rem;
-}
+    &.st-select--medium {
+        @extend .st-text--medium;
+        padding: 0.2rem;
+    }
 
-.st-select--big {
-    @extend .st-text--big;
-    padding: 0.3rem;
+    &.st-select--big {
+        @extend .st-text--big;
+        padding: 0.3rem;
+    }
 }
 
 // forms
@@ -528,7 +534,7 @@ body {
     thead {
         tr {
             th {
-                padding: 0.6rem 1rem;
+                padding: 0.6rem 1.5rem;
                 font-weight: normal;
                 font-size: 1.25rem;
             }
@@ -546,7 +552,7 @@ body {
         font-family: Roboto, sans-serif;
         tr {
             td {
-                padding: 1rem;
+                padding: 1rem 1.5rem;
             }
 
             &:hover {
@@ -585,7 +591,7 @@ body {
         thead {
             tr {
                 th {
-                    padding: 0.6rem 1rem;
+                    padding: 0.6rem 1.5rem;
                 }
             }
         }
@@ -593,7 +599,7 @@ body {
         tbody {
             tr {
                 td {
-                    padding: 1rem;
+                    padding: 1rem 1.5rem;
                 }
             }
         }
@@ -652,61 +658,63 @@ body {
     }
 }
 
+.st-text {
 
+    // text size
+    &.st-text--big {
+        font-size: 1.5rem;
+    }
 
-// text size
-.st-text--big {
-    font-size: 1.5rem;
+    &.st-text--medium {
+        font-size: 1rem;
+    }
+
+    &.st-text--small {
+        font-size: 0.75rem;
+    }
+
+    // text detail size
+    // @formatter:off
+    &.st-text--10 { font-size: 0.1rem !important; }
+    &.st-text--20 { font-size: 0.2rem !important; }
+    &.st-text--30 { font-size: 0.3rem !important; }
+    &.st-text--40 { font-size: 0.4rem !important; }
+    &.st-text--50 { font-size: 0.5rem !important; }
+    &.st-text--60 { font-size: 0.6rem !important; }
+    &.st-text--70 { font-size: 0.7rem !important; }
+    &.st-text--80 { font-size: 0.8rem !important; }
+    &.st-text--90 { font-size: 0.9rem !important; }
+    &.st-text--100 { font-size: 1.0rem !important; }
+    &.st-text--110 { font-size: 1.1rem !important; }
+    &.st-text--120 { font-size: 1.2rem !important; }
+    &.st-text--130 { font-size: 1.3rem !important; }
+    &.st-text--140 { font-size: 1.4rem !important; }
+    &.st-text--150 { font-size: 1.5rem !important; }
+    &.st-text--160 { font-size: 1.6rem !important; }
+    &.st-text--170 { font-size: 1.7rem !important; }
+    &.st-text--180 { font-size: 1.8rem !important; }
+    &.st-text--190 { font-size: 1.9rem !important; }
+    &.st-text--200 { font-size: 2.0rem !important; }
+    &.st-text--210 { font-size: 2.1rem !important; }
+    &.st-text--220 { font-size: 2.2rem !important; }
+    &.st-text--230 { font-size: 2.3rem !important; }
+    &.st-text--240 { font-size: 2.4rem !important; }
+    &.st-text--250 { font-size: 2.5rem !important; }
+    &.st-text--260 { font-size: 2.6rem !important; }
+    &.st-text--270 { font-size: 2.7rem !important; }
+    &.st-text--280 { font-size: 2.8rem !important; }
+    &.st-text--290 { font-size: 2.9rem !important; }
+    &.st-text--300 { font-size: 3.0rem !important; }
+    &.st-text--310 { font-size: 3.1rem !important; }
+    &.st-text--320 { font-size: 3.2rem !important; }
+    &.st-text--330 { font-size: 3.3rem !important; }
+    &.st-text--340 { font-size: 3.4rem !important; }
+    &.st-text--350 { font-size: 3.5rem !important; }
+    &.st-text--360 { font-size: 3.6rem !important; }
+    &.st-text--370 { font-size: 3.7rem !important; }
+    &.st-text--380 { font-size: 3.8rem !important; }
+    &.st-text--390 { font-size: 3.9rem !important; }
+    &.st-text--400 { font-size: 4.0rem !important; }
+    // @formatter:on
 }
 
-.st-text--medium {
-    font-size: 1rem;
-}
-
-.st-text--small {
-    font-size: 0.75rem;
-}
-
-// text detail size
-// @formatter:off
-.st-text--10 { font-size: 0.1rem !important; }
-.st-text--20 { font-size: 0.2rem !important; }
-.st-text--30 { font-size: 0.3rem !important; }
-.st-text--40 { font-size: 0.4rem !important; }
-.st-text--50 { font-size: 0.5rem !important; }
-.st-text--60 { font-size: 0.6rem !important; }
-.st-text--70 { font-size: 0.7rem !important; }
-.st-text--80 { font-size: 0.8rem !important; }
-.st-text--90 { font-size: 0.9rem !important; }
-.st-text--100 { font-size: 1.0rem !important; }
-.st-text--110 { font-size: 1.1rem !important; }
-.st-text--120 { font-size: 1.2rem !important; }
-.st-text--130 { font-size: 1.3rem !important; }
-.st-text--140 { font-size: 1.4rem !important; }
-.st-text--150 { font-size: 1.5rem !important; }
-.st-text--160 { font-size: 1.6rem !important; }
-.st-text--170 { font-size: 1.7rem !important; }
-.st-text--180 { font-size: 1.8rem !important; }
-.st-text--190 { font-size: 1.9rem !important; }
-.st-text--200 { font-size: 2.0rem !important; }
-.st-text--210 { font-size: 2.1rem !important; }
-.st-text--220 { font-size: 2.2rem !important; }
-.st-text--230 { font-size: 2.3rem !important; }
-.st-text--240 { font-size: 2.4rem !important; }
-.st-text--250 { font-size: 2.5rem !important; }
-.st-text--260 { font-size: 2.6rem !important; }
-.st-text--270 { font-size: 2.7rem !important; }
-.st-text--280 { font-size: 2.8rem !important; }
-.st-text--290 { font-size: 2.9rem !important; }
-.st-text--300 { font-size: 3.0rem !important; }
-.st-text--310 { font-size: 3.1rem !important; }
-.st-text--320 { font-size: 3.2rem !important; }
-.st-text--330 { font-size: 3.3rem !important; }
-.st-text--340 { font-size: 3.4rem !important; }
-.st-text--350 { font-size: 3.5rem !important; }
-.st-text--360 { font-size: 3.6rem !important; }
-.st-text--370 { font-size: 3.7rem !important; }
-.st-text--380 { font-size: 3.8rem !important; }
-.st-text--390 { font-size: 3.9rem !important; }
-.st-text--400 { font-size: 4.0rem !important; }
-// @formatter:on

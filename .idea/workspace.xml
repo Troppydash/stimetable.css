@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +158,7 @@
       <workItem from="1602657092675" duration="696000" />
       <workItem from="1603179783816" duration="1238000" />
       <workItem from="1603430176772" duration="1211000" />
-      <workItem from="1603576668526" duration="6917000" />
+      <workItem from="1603576668526" duration="7246000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -200,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601939253446</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Checkpoint">
+      <created>1603594059084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603594059084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +227,8 @@
     <MESSAGE value="UnversionedFiles" />
     <MESSAGE value="React Wrapper and some bug fixes" />
     <MESSAGE value="More Features" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Features" />
+    <MESSAGE value="Checkpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="644" y="344" key="#Notifications" timestamp="1601710488821">

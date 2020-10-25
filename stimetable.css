@@ -22,7 +22,6 @@
 html,
 body {
   font-family: "Roboto Light", sans-serif;
-  font-size: 1rem;
 }
 
 * {
@@ -35,12 +34,10 @@ body {
   padding: 0;
   color: var(--st-text);
 }
-
-.st-text--primary {
+.st-text.st-text--primary {
   color: var(--st-primary);
 }
-
-.st-text--secondary {
+.st-text.st-text--secondary {
   color: var(--st-secondary);
 }
 
@@ -61,56 +58,51 @@ body {
   background-color: var(--st-background-focus);
   border: 1px solid var(--st-primary);
 }
-
-.st-button--primary, .st-form .st-form__control .st-form__submit--primary {
+.st-button.st-button--primary, .st-form .st-form__control .st-button--primary.st-form__submit--medium, .st-form .st-form__control .st-button.st-form__submit--primary, .st-form .st-form__control .st-form__submit--primary.st-form__submit--medium, .st-form .st-form__control .st-button--primary.st-form__submit, .st-form .st-form__control .st-form__submit.st-form__submit--primary {
   border-color: var(--st-primary);
 }
-.st-button--primary:hover, .st-form .st-form__control .st-form__submit--primary:hover {
+.st-button.st-button--primary:hover, .st-form .st-form__control .st-button--primary.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-form__submit--primary:hover, .st-form .st-form__control .st-form__submit--primary.st-form__submit--medium:hover, .st-form .st-form__control .st-button--primary.st-form__submit:hover, .st-form .st-form__control .st-form__submit.st-form__submit--primary:hover {
   border: 1px solid var(--st-primary-hover);
 }
-.st-button--primary:active, .st-form .st-form__control .st-form__submit--primary:active {
+.st-button.st-button--primary:active, .st-form .st-form__control .st-button--primary.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-form__submit--primary:active, .st-form .st-form__control .st-form__submit--primary.st-form__submit--medium:active, .st-form .st-form__control .st-button--primary.st-form__submit:active, .st-form .st-form__control .st-form__submit.st-form__submit--primary:active {
   border: 1px solid var(--st-primary-focus);
 }
-.st-button--primary.st-button--fill, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-button--fill.st-form__submit--primary, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill {
+.st-button.st-button--primary.st-button--fill, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium, .st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary, .st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium, .st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit, .st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary, .st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill {
   background-color: var(--st-primary);
   color: var(--st-primary-text);
 }
-.st-button--primary.st-button--fill:hover, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--fill.st-form__submit--primary:hover, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill:hover {
+.st-button.st-button--primary.st-button--fill:hover, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary:hover, .st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill:hover, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit:hover, .st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary:hover, .st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill:hover {
   background-color: var(--st-primary-hover);
 }
-.st-button--primary.st-button--fill:active, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-button--fill.st-form__submit--primary:active, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill:active {
+.st-button.st-button--primary.st-button--fill:active, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary:active, .st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill:active, .st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit:active, .st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary:active, .st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill:active {
   background-color: var(--st-primary-focus);
 }
-
-.st-button--secondary, .st-form .st-form__control .st-form__submit--secondary {
+.st-button.st-button--secondary, .st-form .st-form__control .st-button--secondary.st-form__submit--medium, .st-form .st-form__control .st-button.st-form__submit--secondary, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium, .st-form .st-form__control .st-button--secondary.st-form__submit, .st-form .st-form__control .st-form__submit.st-form__submit--secondary {
   border-color: var(--st-secondary);
 }
-.st-button--secondary:hover, .st-form .st-form__control .st-form__submit--secondary:hover {
+.st-button.st-button--secondary:hover, .st-form .st-form__control .st-button--secondary.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-form__submit--secondary:hover, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium:hover, .st-form .st-form__control .st-button--secondary.st-form__submit:hover, .st-form .st-form__control .st-form__submit.st-form__submit--secondary:hover {
   border: 1px solid var(--st-secondary-hover);
 }
-.st-button--secondary:active, .st-form .st-form__control .st-form__submit--secondary:active {
+.st-button.st-button--secondary:active, .st-form .st-form__control .st-button--secondary.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-form__submit--secondary:active, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium:active, .st-form .st-form__control .st-button--secondary.st-form__submit:active, .st-form .st-form__control .st-form__submit.st-form__submit--secondary:active {
   border: 1px solid var(--st-secondary-focus);
 }
-.st-button--secondary.st-button--fill, .st-form .st-form__control .st-button--fill.st-form__submit--secondary, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill {
+.st-button.st-button--secondary.st-button--fill, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary, .st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium, .st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium, .st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary, .st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill, .st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill {
   background-color: var(--st-secondary);
   color: var(--st-secondary-text);
 }
-.st-button--secondary.st-button--fill:hover, .st-form .st-form__control .st-button--fill.st-form__submit--secondary:hover, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill:hover {
+.st-button.st-button--secondary.st-button--fill:hover, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary:hover, .st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:hover, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit:hover, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary:hover, .st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill:hover, .st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill:hover {
   background-color: var(--st-secondary-hover);
 }
-.st-button--secondary.st-button--fill:active, .st-form .st-form__control .st-button--fill.st-form__submit--secondary:active, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill:active {
+.st-button.st-button--secondary.st-button--fill:active, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary:active, .st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill:active, .st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:active, .st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit:active, .st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary:active, .st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill:active, .st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill:active {
   background-color: var(--st-secondary-focus);
 }
-
-.st-button--big, .st-form .st-form__control .st-form__submit--big {
+.st-button.st-button--big, .st-form .st-form__control .st-button--big.st-form__submit--medium, .st-form .st-form__control .st-button.st-form__submit--big, .st-form .st-form__control .st-form__submit--big.st-form__submit--medium, .st-form .st-form__control .st-button--big.st-form__submit, .st-form .st-form__control .st-form__submit.st-form__submit--big {
   padding: 0.75rem 1.5rem;
 }
-
-.st-button--medium {
+.st-button.st-button--medium, .st-form .st-form__control .st-button--medium.st-form__submit--medium, .st-form .st-form__control .st-button--medium.st-form__submit {
   padding: 0.5rem 1rem;
 }
-
-.st-button--small, .st-form .st-form__control .st-form__submit--small {
+.st-button.st-button--small, .st-form .st-form__control .st-button.st-form__submit--small, .st-form .st-form__control .st-button--small.st-form__submit--medium, .st-form .st-form__control .st-form__submit--medium.st-form__submit--small, .st-form .st-form__control .st-button--small.st-form__submit, .st-form .st-form__control .st-form__submit.st-form__submit--small {
   padding: 0.25rem 0.5rem;
 }
 
@@ -133,64 +125,59 @@ body {
   border: 1px solid var(--st-primary);
   outline: none;
 }
-
-.st-input--primary, .st-form .st-form__control .st-form__input--primary {
+.st-input.st-input--primary, .st-form .st-form__control .st-input.st-form__input--primary, .st-form .st-form__control .st-input--primary.st-form__input, .st-form .st-form__control .st-form__input.st-form__input--primary {
   border: 1px solid var(--st-primary);
 }
-.st-input--primary:hover, .st-form .st-form__control .st-form__input--primary:hover {
+.st-input.st-input--primary:hover, .st-form .st-form__control .st-input.st-form__input--primary:hover, .st-form .st-form__control .st-input--primary.st-form__input:hover, .st-form .st-form__control .st-form__input.st-form__input--primary:hover {
   border: 1px solid var(--st-primary-hover);
 }
-.st-input--primary:focus, .st-form .st-form__control .st-form__input--primary:focus {
+.st-input.st-input--primary:focus, .st-form .st-form__control .st-input.st-form__input--primary:focus, .st-form .st-form__control .st-input--primary.st-form__input:focus, .st-form .st-form__control .st-form__input.st-form__input--primary:focus {
   border: 1px solid var(--st-primary-focus);
 }
-.st-input--primary.st-input--fill, .st-form .st-form__control .st-input--primary.st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input--fill.st-form__input--primary, .st-form .st-form__control .st-form__input--primary.st-form__input--fill {
+.st-input.st-input--primary.st-input--fill, .st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input.st-input--fill.st-form__input--primary, .st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill, .st-form .st-form__control .st-input--primary.st-input--fill.st-form__input, .st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary, .st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill {
   background-color: var(--st-primary);
   color: var(--st-primary-text);
 }
-.st-input--primary.st-input--fill::placeholder, .st-form .st-form__control .st-input--primary.st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--fill.st-form__input--primary::placeholder, .st-form .st-form__control .st-form__input--primary.st-form__input--fill::placeholder {
+.st-input.st-input--primary.st-input--fill::placeholder, .st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input.st-input--fill.st-form__input--primary::placeholder, .st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--primary.st-input--fill.st-form__input::placeholder, .st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary::placeholder, .st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill::placeholder {
   color: var(--st-primary-text-dim);
 }
-.st-input--primary.st-input--fill:hover, .st-form .st-form__control .st-input--primary.st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input--fill.st-form__input--primary:hover, .st-form .st-form__control .st-form__input--primary.st-form__input--fill:hover {
+.st-input.st-input--primary.st-input--fill:hover, .st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input.st-input--fill.st-form__input--primary:hover, .st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill:hover, .st-form .st-form__control .st-input--primary.st-input--fill.st-form__input:hover, .st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary:hover, .st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill:hover {
   background-color: var(--st-primary-hover);
 }
-.st-input--primary.st-input--fill:focus, .st-form .st-form__control .st-input--primary.st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input--fill.st-form__input--primary:focus, .st-form .st-form__control .st-form__input--primary.st-form__input--fill:focus {
+.st-input.st-input--primary.st-input--fill:focus, .st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input.st-input--fill.st-form__input--primary:focus, .st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill:focus, .st-form .st-form__control .st-input--primary.st-input--fill.st-form__input:focus, .st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary:focus, .st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill:focus {
   background-color: var(--st-primary-focus);
 }
-
-.st-input--secondary, .st-form .st-form__control .st-form__input--secondary {
+.st-input.st-input--secondary, .st-form .st-form__control .st-input.st-form__input--secondary, .st-form .st-form__control .st-input--secondary.st-form__input, .st-form .st-form__control .st-form__input.st-form__input--secondary {
   border: 1px solid var(--st-secondary);
 }
-.st-input--secondary:hover, .st-form .st-form__control .st-form__input--secondary:hover {
+.st-input.st-input--secondary:hover, .st-form .st-form__control .st-input.st-form__input--secondary:hover, .st-form .st-form__control .st-input--secondary.st-form__input:hover, .st-form .st-form__control .st-form__input.st-form__input--secondary:hover {
   border: 1px solid var(--st-secondary-hover);
 }
-.st-input--secondary:focus, .st-form .st-form__control .st-form__input--secondary:focus {
+.st-input.st-input--secondary:focus, .st-form .st-form__control .st-input.st-form__input--secondary:focus, .st-form .st-form__control .st-input--secondary.st-form__input:focus, .st-form .st-form__control .st-form__input.st-form__input--secondary:focus {
   border: 1px solid var(--st-secondary-focus);
 }
-.st-input--secondary.st-input--fill, .st-form .st-form__control .st-input--fill.st-form__input--secondary, .st-form .st-form__control .st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input--secondary.st-form__input--primary.st-form__input--fill {
+.st-input.st-input--secondary.st-input--fill, .st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary, .st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill, .st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary, .st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill, .st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill {
   background-color: var(--st-secondary);
   color: var(--st-secondary-text);
 }
-.st-input--secondary.st-input--fill::placeholder, .st-form .st-form__control .st-input--fill.st-form__input--secondary::placeholder, .st-form .st-form__control .st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--secondary.st-form__input--primary.st-form__input--fill::placeholder {
+.st-input.st-input--secondary.st-input--fill::placeholder, .st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary::placeholder, .st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input::placeholder, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary::placeholder, .st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill::placeholder, .st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill::placeholder {
   color: var(--st-secondary-text-dim);
 }
-.st-input--secondary.st-input--fill:hover, .st-form .st-form__control .st-input--fill.st-form__input--secondary:hover, .st-form .st-form__control .st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input--secondary.st-form__input--primary.st-form__input--fill:hover {
+.st-input.st-input--secondary.st-input--fill:hover, .st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary:hover, .st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill:hover, .st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input:hover, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary:hover, .st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill:hover, .st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill:hover {
   background-color: var(--st-secondary-hover);
 }
-.st-input--secondary.st-input--fill:focus, .st-form .st-form__control .st-input--fill.st-form__input--secondary:focus, .st-form .st-form__control .st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input--secondary.st-form__input--primary.st-form__input--fill:focus {
+.st-input.st-input--secondary.st-input--fill:focus, .st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary:focus, .st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill:focus, .st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input:focus, .st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary:focus, .st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill:focus, .st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill:focus {
   background-color: var(--st-secondary-focus);
 }
-
-.st-input--big, .st-form .st-form__control .st-form__input--big {
+.st-input.st-input--big, .st-form .st-form__control .st-input.st-form__input--big, .st-form .st-form__control .st-input--big.st-form__input, .st-form .st-form__control .st-form__input.st-form__input--big {
   padding: 1rem 1rem;
   height: 4rem;
 }
-
-.st-input--medium, .st-form .st-form__control .st-form__input--medium {
+.st-input.st-input--medium, .st-form .st-form__control .st-input.st-form__input--medium, .st-form .st-form__control .st-input--medium.st-form__input, .st-form .st-form__control .st-form__input.st-form__input--medium {
   padding: 1rem;
   height: 3rem;
 }
-
-.st-input--small, .st-form .st-form__control .st-form__input--small {
+.st-input.st-input--small, .st-form .st-form__control .st-input.st-form__input--small, .st-form .st-form__control .st-input--small.st-form__input, .st-form .st-form__control .st-form__input.st-form__input--small {
   padding: 0.5rem;
   height: 2rem;
 }
@@ -217,64 +204,59 @@ body {
   border: 1px solid var(--st-primary);
   outline: none;
 }
-
-.st-select--primary, .st-form .st-form__control .st-form__select--primary {
+.st-select.st-select--primary, .st-form .st-form__control .st-select.st-form__select--primary, .st-form .st-form__control .st-select--primary.st-form__select, .st-form .st-form__control .st-form__select.st-form__select--primary {
   border-color: var(--st-primary);
 }
-.st-select--primary:hover, .st-form .st-form__control .st-form__select--primary:hover {
+.st-select.st-select--primary:hover, .st-form .st-form__control .st-select.st-form__select--primary:hover, .st-form .st-form__control .st-select--primary.st-form__select:hover, .st-form .st-form__control .st-form__select.st-form__select--primary:hover {
   border-color: var(--st-primary-hover);
 }
-.st-select--primary:focus, .st-form .st-form__control .st-form__select--primary:focus {
+.st-select.st-select--primary:focus, .st-form .st-form__control .st-select.st-form__select--primary:focus, .st-form .st-form__control .st-select--primary.st-form__select:focus, .st-form .st-form__control .st-form__select.st-form__select--primary:focus {
   border: 1px solid var(--st-primary-focus);
 }
-.st-select--primary.st-select--fill, .st-form .st-form__control .st-select--primary.st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select--fill.st-form__select--primary, .st-form .st-form__control .st-form__select--primary.st-form__select--fill {
+.st-select.st-select--primary.st-select--fill, .st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select.st-select--fill.st-form__select--primary, .st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill, .st-form .st-form__control .st-select--primary.st-select--fill.st-form__select, .st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary, .st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill {
   background: var(--st-primary);
   color: var(--st-primary-text);
 }
-.st-select--primary.st-select--fill:hover, .st-form .st-form__control .st-select--primary.st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select--fill.st-form__select--primary:hover, .st-form .st-form__control .st-form__select--primary.st-form__select--fill:hover {
+.st-select.st-select--primary.st-select--fill:hover, .st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select.st-select--fill.st-form__select--primary:hover, .st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill:hover, .st-form .st-form__control .st-select--primary.st-select--fill.st-form__select:hover, .st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary:hover, .st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill:hover {
   background: var(--st-primary-hover);
 }
-.st-select--primary.st-select--fill > option, .st-form .st-form__control .st-select--primary.st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select--fill.st-form__select--primary > option, .st-form .st-form__control .st-form__select--primary.st-form__select--fill > option {
+.st-select.st-select--primary.st-select--fill > option, .st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select.st-select--fill.st-form__select--primary > option, .st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill > option, .st-form .st-form__control .st-select--primary.st-select--fill.st-form__select > option, .st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary > option, .st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill > option {
   background: var(--st-primary-hover);
   color: var(--st-primary-text);
 }
-.st-select--primary.st-select--fill:focus, .st-form .st-form__control .st-select--primary.st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select--fill.st-form__select--primary:focus, .st-form .st-form__control .st-form__select--primary.st-form__select--fill:focus {
+.st-select.st-select--primary.st-select--fill:focus, .st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select.st-select--fill.st-form__select--primary:focus, .st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill:focus, .st-form .st-form__control .st-select--primary.st-select--fill.st-form__select:focus, .st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary:focus, .st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill:focus {
   background: var(--st-primary-focus);
 }
-
-.st-select--secondary, .st-form .st-form__control .st-form__select--secondary {
+.st-select.st-select--secondary, .st-form .st-form__control .st-select.st-form__select--secondary, .st-form .st-form__control .st-select--secondary.st-form__select, .st-form .st-form__control .st-form__select.st-form__select--secondary {
   border-color: var(--st-secondary);
 }
-.st-select--secondary:hover, .st-form .st-form__control .st-form__select--secondary:hover {
+.st-select.st-select--secondary:hover, .st-form .st-form__control .st-select.st-form__select--secondary:hover, .st-form .st-form__control .st-select--secondary.st-form__select:hover, .st-form .st-form__control .st-form__select.st-form__select--secondary:hover {
   border-color: var(--st-secondary-hover);
 }
-.st-select--secondary:focus, .st-form .st-form__control .st-form__select--secondary:focus {
+.st-select.st-select--secondary:focus, .st-form .st-form__control .st-select.st-form__select--secondary:focus, .st-form .st-form__control .st-select--secondary.st-form__select:focus, .st-form .st-form__control .st-form__select.st-form__select--secondary:focus {
   border: 1px solid var(--st-secondary-hover);
 }
-.st-select--secondary.st-select--fill, .st-form .st-form__control .st-select--fill.st-form__select--secondary, .st-form .st-form__control .st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select--secondary.st-form__select--primary.st-form__select--fill {
+.st-select.st-select--secondary.st-select--fill, .st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary, .st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill, .st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary, .st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill, .st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill {
   background: var(--st-secondary);
   color: var(--st-secondary-text);
 }
-.st-select--secondary.st-select--fill:hover, .st-form .st-form__control .st-select--fill.st-form__select--secondary:hover, .st-form .st-form__control .st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select--secondary.st-form__select--primary.st-form__select--fill:hover {
+.st-select.st-select--secondary.st-select--fill:hover, .st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary:hover, .st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill:hover, .st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select:hover, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary:hover, .st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill:hover, .st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill:hover {
   background: var(--st-secondary-hover);
 }
-.st-select--secondary.st-select--fill > option, .st-form .st-form__control .st-select--fill.st-form__select--secondary > option, .st-form .st-form__control .st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select--secondary.st-form__select--primary.st-form__select--fill > option {
+.st-select.st-select--secondary.st-select--fill > option, .st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary > option, .st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill > option, .st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select > option, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary > option, .st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill > option, .st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill > option {
   background: var(--st-secondary-hover);
   color: var(--st-secondary-text);
 }
-.st-select--secondary.st-select--fill:focus, .st-form .st-form__control .st-select--fill.st-form__select--secondary:focus, .st-form .st-form__control .st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select--secondary.st-form__select--primary.st-form__select--fill:focus {
+.st-select.st-select--secondary.st-select--fill:focus, .st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary:focus, .st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill:focus, .st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select:focus, .st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary:focus, .st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill:focus, .st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill:focus {
   background: var(--st-secondary-hover);
 }
-
-.st-select--small, .st-form .st-form__control .st-form__select--small {
+.st-select.st-select--small, .st-form .st-form__control .st-select.st-form__select--small, .st-form .st-form__control .st-select--small.st-form__select, .st-form .st-form__control .st-form__select.st-form__select--small {
   padding: 0.1rem;
 }
-
-.st-select--medium, .st-form .st-form__control .st-form__select--medium {
+.st-select.st-select--medium, .st-form .st-form__control .st-select.st-form__select--medium, .st-form .st-form__control .st-select--medium.st-form__select, .st-form .st-form__control .st-form__select.st-form__select--medium {
   padding: 0.2rem;
 }
-
-.st-select--big, .st-form .st-form__control .st-form__select--big {
+.st-select.st-select--big, .st-form .st-form__control .st-select.st-form__select--big, .st-form .st-form__control .st-select--big.st-form__select, .st-form .st-form__control .st-form__select.st-form__select--big {
   padding: 0.3rem;
 }
 
@@ -347,7 +329,7 @@ body {
   border-width: 2px;
 }
 .st-table thead tr th {
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.5rem;
   font-weight: normal;
   font-size: 1.25rem;
 }
@@ -358,7 +340,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 .st-table tbody tr td {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 .st-table tbody tr:hover {
   background: var(--st-background-hover);
@@ -375,10 +357,10 @@ body {
   font-size: 0.85rem;
 }
 .st-table.st-table--medium thead tr th {
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.5rem;
 }
 .st-table.st-table--medium tbody tr td {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 .st-table.st-table--big thead tr th {
   padding: 0.8rem 2.25rem;
@@ -407,175 +389,133 @@ body {
   border-bottom: 1px solid var(--st-secondary);
 }
 
-.st-text--big, .st-button--big, .st-input--big, .st-select--big, .st-form .st-form__control .st-form__input--big, .st-form .st-form__control .st-form__select--big, .st-form .st-form__control .st-form__submit--big {
+.st-text.st-text--big, .st-text.st-button.st-button--big, .st-text.st-input.st-input--big, .st-text.st-select.st-select--big, .st-form .st-form__control .st-text.st-input--big.st-form__input, .st-form .st-form__control .st-text.st-input.st-form__input--big, .st-form .st-form__control .st-text.st-form__input.st-form__input--big, .st-form .st-form__control .st-text.st-select--big.st-form__select, .st-form .st-form__control .st-text.st-select.st-form__select--big, .st-form .st-form__control .st-text.st-form__select.st-form__select--big, .st-form .st-form__control .st-text.st-button--big.st-form__submit, .st-form .st-form__control .st-text.st-button.st-form__submit--big, .st-form .st-form__control .st-text.st-form__submit.st-form__submit--big, .st-form .st-form__control .st-text.st-button--big.st-form__submit--medium, .st-form .st-form__control .st-text.st-form__submit--big.st-form__submit--medium {
   font-size: 1.5rem;
 }
-
-.st-text--medium, .st-button--medium, .st-input--medium, .st-select--medium, .st-form .st-form__control .st-form__input--medium, .st-form .st-form__control .st-form__select--medium {
+.st-text.st-text--medium, .st-text.st-button.st-button--medium, .st-text.st-input.st-input--medium, .st-text.st-select.st-select--medium, .st-form .st-form__control .st-text.st-input--medium.st-form__input, .st-form .st-form__control .st-text.st-input.st-form__input--medium, .st-form .st-form__control .st-text.st-form__input.st-form__input--medium, .st-form .st-form__control .st-text.st-select--medium.st-form__select, .st-form .st-form__control .st-text.st-select.st-form__select--medium, .st-form .st-form__control .st-text.st-form__select.st-form__select--medium, .st-form .st-form__control .st-text.st-button--medium.st-form__submit, .st-form .st-form__control .st-text.st-button--medium.st-form__submit--medium {
   font-size: 1rem;
 }
-
-.st-text--small, .st-button--small, .st-input--small, .st-select--small, .st-form .st-form__control .st-form__input--small, .st-form .st-form__control .st-form__select--small, .st-form .st-form__control .st-form__submit--small {
+.st-text.st-text--small, .st-text.st-button.st-button--small, .st-text.st-input.st-input--small, .st-text.st-select.st-select--small, .st-form .st-form__control .st-text.st-input--small.st-form__input, .st-form .st-form__control .st-text.st-input.st-form__input--small, .st-form .st-form__control .st-text.st-form__input.st-form__input--small, .st-form .st-form__control .st-text.st-select--small.st-form__select, .st-form .st-form__control .st-text.st-select.st-form__select--small, .st-form .st-form__control .st-text.st-form__select.st-form__select--small, .st-form .st-form__control .st-text.st-button--small.st-form__submit, .st-form .st-form__control .st-text.st-button--small.st-form__submit--medium, .st-form .st-form__control .st-text.st-button.st-form__submit--small, .st-form .st-form__control .st-text.st-form__submit.st-form__submit--small, .st-form .st-form__control .st-text.st-form__submit--medium.st-form__submit--small {
   font-size: 0.75rem;
 }
-
-.st-text--10 {
+.st-text.st-text--10 {
   font-size: 0.1rem !important;
 }
-
-.st-text--20 {
+.st-text.st-text--20 {
   font-size: 0.2rem !important;
 }
-
-.st-text--30 {
+.st-text.st-text--30 {
   font-size: 0.3rem !important;
 }
-
-.st-text--40 {
+.st-text.st-text--40 {
   font-size: 0.4rem !important;
 }
-
-.st-text--50 {
+.st-text.st-text--50 {
   font-size: 0.5rem !important;
 }
-
-.st-text--60 {
+.st-text.st-text--60 {
   font-size: 0.6rem !important;
 }
-
-.st-text--70 {
+.st-text.st-text--70 {
   font-size: 0.7rem !important;
 }
-
-.st-text--80 {
+.st-text.st-text--80 {
   font-size: 0.8rem !important;
 }
-
-.st-text--90 {
+.st-text.st-text--90 {
   font-size: 0.9rem !important;
 }
-
-.st-text--100 {
+.st-text.st-text--100 {
   font-size: 1rem !important;
 }
-
-.st-text--110 {
+.st-text.st-text--110 {
   font-size: 1.1rem !important;
 }
-
-.st-text--120 {
+.st-text.st-text--120 {
   font-size: 1.2rem !important;
 }
-
-.st-text--130 {
+.st-text.st-text--130 {
   font-size: 1.3rem !important;
 }
-
-.st-text--140 {
+.st-text.st-text--140 {
   font-size: 1.4rem !important;
 }
-
-.st-text--150 {
+.st-text.st-text--150 {
   font-size: 1.5rem !important;
 }
-
-.st-text--160 {
+.st-text.st-text--160 {
   font-size: 1.6rem !important;
 }
-
-.st-text--170 {
+.st-text.st-text--170 {
   font-size: 1.7rem !important;
 }
-
-.st-text--180 {
+.st-text.st-text--180 {
   font-size: 1.8rem !important;
 }
-
-.st-text--190 {
+.st-text.st-text--190 {
   font-size: 1.9rem !important;
 }
-
-.st-text--200 {
+.st-text.st-text--200 {
   font-size: 2rem !important;
 }
-
-.st-text--210 {
+.st-text.st-text--210 {
   font-size: 2.1rem !important;
 }
-
-.st-text--220 {
+.st-text.st-text--220 {
   font-size: 2.2rem !important;
 }
-
-.st-text--230 {
+.st-text.st-text--230 {
   font-size: 2.3rem !important;
 }
-
-.st-text--240 {
+.st-text.st-text--240 {
   font-size: 2.4rem !important;
 }
-
-.st-text--250 {
+.st-text.st-text--250 {
   font-size: 2.5rem !important;
 }
-
-.st-text--260 {
+.st-text.st-text--260 {
   font-size: 2.6rem !important;
 }
-
-.st-text--270 {
+.st-text.st-text--270 {
   font-size: 2.7rem !important;
 }
-
-.st-text--280 {
+.st-text.st-text--280 {
   font-size: 2.8rem !important;
 }
-
-.st-text--290 {
+.st-text.st-text--290 {
   font-size: 2.9rem !important;
 }
-
-.st-text--300 {
+.st-text.st-text--300 {
   font-size: 3rem !important;
 }
-
-.st-text--310 {
+.st-text.st-text--310 {
   font-size: 3.1rem !important;
 }
-
-.st-text--320 {
+.st-text.st-text--320 {
   font-size: 3.2rem !important;
 }
-
-.st-text--330 {
+.st-text.st-text--330 {
   font-size: 3.3rem !important;
 }
-
-.st-text--340 {
+.st-text.st-text--340 {
   font-size: 3.4rem !important;
 }
-
-.st-text--350 {
+.st-text.st-text--350 {
   font-size: 3.5rem !important;
 }
-
-.st-text--360 {
+.st-text.st-text--360 {
   font-size: 3.6rem !important;
 }
-
-.st-text--370 {
+.st-text.st-text--370 {
   font-size: 3.7rem !important;
 }
-
-.st-text--380 {
+.st-text.st-text--380 {
   font-size: 3.8rem !important;
 }
-
-.st-text--390 {
+.st-text.st-text--390 {
   font-size: 3.9rem !important;
 }
-
-.st-text--400 {
+.st-text.st-text--400 {
   font-size: 4rem !important;
 }
 
