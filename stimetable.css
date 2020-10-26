@@ -9,9 +9,7 @@
   --st-secondary-focus: #606060;
   --st-secondary-text: white;
   --st-secondary-text-dim: #dedede;
-  --st-dark: #4b4b4b;
-  --st-light: #f2f2f2;
-  --st-highlight: var(--st-light);
+  --st-highlight: #f2f2f2;
   --st-background: white;
   --st-background-hover: #fafafa;
   --st-background-focus: #f4f4f4;
@@ -22,6 +20,7 @@
 html,
 body {
   font-family: "Roboto Light", sans-serif;
+  background-color: var(--st-background);
 }
 
 * {
@@ -275,6 +274,7 @@ body {
 }
 .st-form .st-form__control .st-form__label span {
   margin-right: 0.5rem;
+  color: var(--st-text);
 }
 .st-form .st-form__control .st-form__label--multi {
   flex-direction: column;
@@ -319,6 +319,12 @@ body {
 .st-form .st-form__control--big > .st-form__label {
   padding: 0.75rem 0;
 }
+.st-form .st-form__control--medium {
+  margin: 1rem 0;
+}
+.st-form .st-form__control--medium > .st-form__label {
+  padding: 0.25rem;
+}
 
 .st-table {
   border-collapse: collapse;
@@ -332,6 +338,7 @@ body {
   padding: 0.6rem 1.5rem;
   font-weight: normal;
   font-size: 1.25rem;
+  color: var(--st-text);
 }
 .st-table tr {
   border-bottom: 1px solid var(--st-text);
@@ -341,6 +348,7 @@ body {
 }
 .st-table tbody tr td {
   padding: 1rem 1.5rem;
+  color: var(--st-text);
 }
 .st-table tbody tr:hover {
   background: var(--st-background-hover);

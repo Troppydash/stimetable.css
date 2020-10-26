@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <title>Test</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
     <link rel="stylesheet" href="stimetable.css">
 
     <style>
         .debug {
             border: 1px solid yellow;
         }
+
+        body {
+            margin: 0;
+            padding: 1rem;
+        }
+
+        body.dark {
+            --st-primary: #b82832;
+            --st-primary-hover: #9f222c;
+            --st-primary-focus: #8f1f28;
+            --st-primary-text: white;
+            --st-primary-text-dim: #bbb;
+
+            --st-secondary: #6b6b6b;
+            --st-secondary-hover: #5b5a5a;
+            --st-secondary-focus: #4c4c4c;
+            --st-secondary-text: white;
+            --st-secondary-text-dim: #bbb;
+
+            --st-highlight: #f2f2f2;
+
+            --st-background: #282828;
+            --st-background-hover: #323232;
+            --st-background-focus: #3c3c3c;
+            --st-text: #fff;
+            --st-text-dim: #bbb;
+        }
     </style>
 </head>
-<body>
-
+<body class="dark">
+<button onclick="toggleMode()">toggle light</button>
 <div>
     <p class="st-text st-text--250" style="margin: 1rem 0">text</p>
     <p class="st-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
@@ -639,6 +667,16 @@
 <br />
 <br />
 
-
+<script>
+    function toggleMode() {
+        var ref = document.getElementsByTagName('body')[0];
+        if (ref.className.indexOf('dark') !== -1) {
+            // is dark mode
+            ref.className = '';
+        } else {
+            ref.className = 'dark';
+        }
+    }
+</script>
 </body>
 </html>

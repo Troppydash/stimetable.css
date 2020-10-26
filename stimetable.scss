@@ -12,10 +12,7 @@
     --st-secondary-text: white;
     --st-secondary-text-dim: #dedede;
 
-    --st-dark: #4b4b4b;
-    --st-light: #f2f2f2;
-
-    --st-highlight: var(--st-light);
+    --st-highlight: #f2f2f2;
 
     --st-background: white;
     --st-background-hover: #fafafa;
@@ -27,6 +24,7 @@
 html,
 body {
     font-family: "Roboto Light", sans-serif;
+    background-color: var(--st-background);
 }
 
 // defaults
@@ -374,6 +372,7 @@ body {
 
             span {
                 margin-right: 0.5rem;
+                color: var(--st-text)
             }
         }
 
@@ -523,6 +522,13 @@ body {
         }
     }
 
+    .st-form__control--medium {
+        margin: 1rem 0;
+
+        & > .st-form__label {
+            padding: 0.25rem;
+        }
+    }
 }
 
 // tables
@@ -537,6 +543,7 @@ body {
                 padding: 0.6rem 1.5rem;
                 font-weight: normal;
                 font-size: 1.25rem;
+                color: var(--st-text);
             }
 
             border-width: 2px;
@@ -553,6 +560,7 @@ body {
         tr {
             td {
                 padding: 1rem 1.5rem;
+                color: var(--st-text);
             }
 
             &:hover {
