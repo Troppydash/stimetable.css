@@ -272,6 +272,7 @@ body {
   justify-content: left;
   align-items: center;
 }
+.st-form .st-form__control .st-form__label label,
 .st-form .st-form__control .st-form__label span {
   margin-right: 0.5rem;
   color: var(--st-text);
@@ -395,6 +396,95 @@ body {
 }
 .st-table.st-table--secondary tr {
   border-bottom: 1px solid var(--st-secondary);
+}
+
+.st-list .st-list__section {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--st-background);
+  color: var(--st-text);
+  width: fit-content;
+}
+.st-list .st-list__section .st-list__header {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--st-text);
+  margin-bottom: 0.5rem;
+}
+.st-list .st-list__section *:not(.st-list__header) {
+  padding: 0.25rem 0.5rem;
+}
+.st-list.st-list--primary .st-list__section .st-list__header {
+  border-bottom: 1px solid var(--st-primary);
+}
+.st-list.st-list--primary.st-list--fill .st-list__section .st-list__header {
+  border-bottom: none;
+  background-color: var(--st-primary-focus);
+  color: var(--st-primary-text);
+}
+.st-list.st-list--secondary .st-list__section .st-list__header {
+  border-bottom: 1px solid var(--st-secondary);
+}
+.st-list.st-list--secondary.st-list--fill .st-list__section .st-list__header {
+  border-bottom: none;
+  background-color: var(--st-secondary-focus);
+  color: var(--st-secondary-text);
+}
+.st-list.st-list--fill .st-list__section .st-list__header {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.5rem;
+}
+.st-list.st-list--big .st-list__section .st-list__header {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.st-list.st-list--big .st-list__section *:not(.st-list__header) {
+  padding: 0.3em 0.75rem;
+  font-size: 1.25rem;
+}
+.st-list.st-list--big.st-list--fill .st-list__section .st-list__header {
+  padding: 0.75rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--big.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.75rem;
+}
+.st-list.st-list--medium .st-list__section .st-list__header {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.st-list.st-list--medium .st-list__section *:not(.st-list__header) {
+  padding: 0.25em 0.5rem;
+  font-size: 1rem;
+}
+.st-list.st-list--medium.st-list--fill .st-list__section .st-list__header {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--medium.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.5rem;
+}
+.st-list.st-list--small .st-list__section .st-list__header {
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+.st-list.st-list--small .st-list__section *:not(.st-list__header) {
+  padding: 0.2em 0.4rem;
+  font-size: 0.8rem;
+}
+.st-list.st-list--small.st-list--fill .st-list__section .st-list__header {
+  padding: 0.75rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--small.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.75rem;
 }
 
 .st-text.st-text--big, .st-text.st-button.st-button--big, .st-text.st-input.st-input--big, .st-text.st-select.st-select--big, .st-form .st-form__control .st-text.st-input--big.st-form__input, .st-form .st-form__control .st-text.st-input.st-form__input--big, .st-form .st-form__control .st-text.st-form__input.st-form__input--big, .st-form .st-form__control .st-text.st-select--big.st-form__select, .st-form .st-form__control .st-text.st-select.st-form__select--big, .st-form .st-form__control .st-text.st-form__select.st-form__select--big, .st-form .st-form__control .st-text.st-button--big.st-form__submit, .st-form .st-form__control .st-text.st-button.st-form__submit--big, .st-form .st-form__control .st-text.st-form__submit.st-form__submit--big, .st-form .st-form__control .st-text.st-button--big.st-form__submit--medium, .st-form .st-form__control .st-text.st-form__submit--big.st-form__submit--medium {
