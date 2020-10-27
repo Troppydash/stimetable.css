@@ -41,12 +41,33 @@ body {
     color: var(--st-text);
 
     // nested
+    &.st-text--link {
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:active {
+            color: var(--st-text-dim);
+        }
+    }
+
     &.st-text--primary {
         color: var(--st-primary);
+
+        &.st-text--link {
+            &:active {
+                color: var(--st-primary-focus);
+            }
+        }
     }
 
     &.st-text--secondary {
         color: var(--st-secondary);
+
+        &.st-text--link {
+            &:active {
+                color: var(--st-secondary-focus);
+            }
+        }
     }
 }
 
@@ -536,7 +557,6 @@ body {
 .st-table {
     border-collapse: collapse;
     text-align: left;
-    cursor: pointer;
 
     thead {
         tr {
@@ -825,6 +845,41 @@ body {
                     padding: 0.75rem;
                 }
             }
+        }
+    }
+}
+
+// tooltip
+.st-tooltip {
+    position: relative;
+    width: fit-content;
+
+    &.st-tooltip--inline {
+        display: inline-block;
+    }
+
+    span.st-tooltip__text {
+        visibility: hidden;
+        background-color: var(--st-background-hover);
+        color: var(--st-text);
+        padding: 0.25rem 0.5rem;
+        white-space: nowrap;
+
+        box-shadow: 0 0 5px 3px var(--st-background);
+        border: 1px solid var(--st-text);
+
+        z-index: 1;
+        position: absolute;
+        bottom: calc(100% + 3px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        pointer-events: none;
+    }
+
+    &:hover {
+        .st-tooltip__text {
+            visibility: visible;
         }
     }
 }

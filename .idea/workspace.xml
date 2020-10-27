@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.scss" afterDir="false" />
@@ -161,7 +162,8 @@
       <workItem from="1603179783816" duration="1238000" />
       <workItem from="1603430176772" duration="1211000" />
       <workItem from="1603576668526" duration="7746000" />
-      <workItem from="1603686655531" duration="9172000" />
+      <workItem from="1603686655531" duration="9961000" />
+      <workItem from="1603773753607" duration="2959000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -219,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603690485673</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Lists">
+      <created>1603699153108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603699153108</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,17 +256,18 @@
     <MESSAGE value="Checkpoint" />
     <MESSAGE value="Added table styling and better nested classes, this commit might break the react wrapper" />
     <MESSAGE value="Changed README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed README" />
+    <MESSAGE value="Added Lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lists" />
   </component>
   <component name="WindowStateProjectService">
     <state x="644" y="344" key="#Notifications" timestamp="1601710488821">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="644" y="344" key="#Notifications/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601710488821" />
-    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog" timestamp="1601601134655">
+    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog" timestamp="1603776714217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601134655" />
+    <state x="618" y="298" width="683" height="638" key="EditFileWatcherDialog/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603776714217" />
     <state x="739" y="372" key="FileChooserDialogImpl" timestamp="1601706001572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -270,34 +280,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="221" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601161729" />
-    <state width="1901" height="286" key="GridCell.Tab.0.bottom" timestamp="1603692018038">
+    <state width="1901" height="286" key="GridCell.Tab.0.bottom" timestamp="1603774986194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603692018038" />
-    <state width="1901" height="286" key="GridCell.Tab.0.center" timestamp="1603692018038">
+    <state width="1901" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603774986194" />
+    <state width="1901" height="286" key="GridCell.Tab.0.center" timestamp="1603774986193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603692018038" />
-    <state width="1901" height="286" key="GridCell.Tab.0.left" timestamp="1603692018038">
+    <state width="1901" height="286" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603774986193" />
+    <state width="1901" height="286" key="GridCell.Tab.0.left" timestamp="1603774986193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603692018038" />
-    <state width="1901" height="286" key="GridCell.Tab.0.right" timestamp="1603692018038">
+    <state width="1901" height="286" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603774986193" />
+    <state width="1901" height="286" key="GridCell.Tab.0.right" timestamp="1603774986193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1901" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603692018038" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601601135167">
+    <state width="1901" height="286" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603774986193" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603776714846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601601135167" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603690487303">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603776714846" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603699155157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603690487303" />
-    <state x="766" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601937686495">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603699155157" />
+    <state x="766" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603775457302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="766" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1601937686495" />
+    <state x="766" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603775457302" />
     <state x="1920" y="-88" width="974" height="1028" maximized="true" key="dock-window-1" timestamp="1603688495674">
       <screen x="1920" y="-123" width="960" height="1496" />
     </state>
@@ -306,9 +316,9 @@
       <screen x="1920" y="-123" width="960" height="1496" />
     </state>
     <state x="1920" y="-14" width="974" height="1028" maximized="true" key="dock-window-2/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603690671263" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603594451290">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603775838261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603594451290" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-123.960.1496@0.0.1920.1040" timestamp="1603775838261" />
   </component>
 </project>

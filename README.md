@@ -6,7 +6,9 @@ css stylesheet inspired by the stimetable website
 
 RULES
 
-[] is a list of optional specifier  
+[] is a list of optional specifier
+| means xor  
+... means anything else  
 s: s1, s2, where s1 and s2 are the options for s, prefix the s with base classname if in a html class attribute
 
 EXAMPLE  
@@ -49,7 +51,7 @@ size: big, medium, small
 style: primary, secondary
 percent: 10...400 step 10
 
-    <p class="st-text [--<size>, --<style> --<percent>]">This is a paragraph</p>
+    <p class="st-text [--link, --<size>, --<style> --<percent>]">This is a paragraph</p>
 
 ### Input
  
@@ -74,7 +76,7 @@ style: primary, secondary
         <div class="st-form__control [--size]">
             <label class="st-form__label [--multi, --full, --settings]">
                 <span>Form Label</span>
-                <ANY class="st-form__[input, select, submit] [--<size>, --<style>]" />
+                <input|select|... class="st-form__[input, select, submit] [--<size>, --<style>]" />
             </label>
         </div>
     </form>
@@ -99,3 +101,13 @@ style: primary, secondary
             </tr>
         </tbody>
     </table>
+
+
+### Tooltip
+
+    <div|span|... class="st-tooltip [--inline]">
+        <span class="st-tooltip__text">This is a tooltip</span>
+        <...>Hover over me</...>
+    </div|span|...>
+    
+
