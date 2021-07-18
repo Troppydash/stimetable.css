@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="Changed to less and more modularized">
+    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="added more list features">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/text.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tooltip.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/tooltip.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
@@ -183,7 +183,7 @@
       <workItem from="1615367244409" duration="22000" />
       <workItem from="1615450354326" duration="185000" />
       <workItem from="1618985500610" duration="1201000" />
-      <workItem from="1626596636291" duration="9087000" />
+      <workItem from="1626596636291" duration="9769000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626608171404</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added more list features">
+      <created>1626610092878</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626610092878</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +300,7 @@
     <MESSAGE value="Added Lists" />
     <MESSAGE value="Tooltips and such" />
     <MESSAGE value="Changed to less and more modularized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to less and more modularized" />
+    <MESSAGE value="added more list features" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more list features" />
   </component>
 </project>

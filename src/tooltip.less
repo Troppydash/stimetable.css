@@ -3,6 +3,32 @@
     position: relative;
     width: fit-content;
 
+
+    &.st-tooltip--top {
+        span.st-tooltip__text {
+            transform: translate(-50%, 0);
+        }
+    }
+
+    &.st-tooltip--bottom {
+        span.st-tooltip__text {
+            transform: translate(-50%, 200%);
+        }
+    }
+
+    &.st-tooltip--right {
+        span.st-tooltip__text {
+            transform: translate(50%, 100%);
+        }
+    }
+
+    &.st-tooltip--left {
+        span.st-tooltip__text {
+            transform: translate(-150%, 100%);
+        }
+    }
+
+    // ? why
     &.st-tooltip--inline {
         display: inline-block;
     }
@@ -19,18 +45,11 @@
 
         z-index: 1;
         position: absolute;
-        bottom: 100% + 3px;
+        bottom: calc(100% + 3px);
         left: 50%;
         transform: translateX(-50%);
 
         pointer-events: none;
-
-        &.st-tooltip--top {}
-
-        &.st-tooltip--bottom {
-            bottom: 0;
-            top: 100% + 3px;
-        }
     }
 
     &:hover {
