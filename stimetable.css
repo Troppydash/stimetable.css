@@ -85,6 +85,9 @@ body {
 .st-select.st-select--small {
   font-size: 0.75rem;
 }
+.st-text.st-text--title {
+  font-size: 2.5rem;
+}
 .st-text.st-text--10 {
   font-size: 0.1rem !important;
 }
@@ -495,7 +498,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: var(--st-background);
   color: var(--st-text);
   width: fit-content;
 }
@@ -504,8 +506,11 @@ body {
   padding: 0.5rem;
   border-bottom: 1px solid var(--st-text);
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.st-list .st-list__section *:not(.st-list__header) {
+.st-list .st-list__section > *:not(.st-list__header) {
   padding: 0.25rem 0.5rem;
 }
 .st-list.st-list--primary .st-list__section .st-list__header {
@@ -513,7 +518,7 @@ body {
 }
 .st-list.st-list--primary.st-list--fill .st-list__section .st-list__header {
   border-bottom: none;
-  background-color: var(--st-primary-focus);
+  background-color: var(--st-primary);
   color: var(--st-primary-text);
 }
 .st-list.st-list--secondary .st-list__section .st-list__header {
@@ -521,28 +526,21 @@ body {
 }
 .st-list.st-list--secondary.st-list--fill .st-list__section .st-list__header {
   border-bottom: none;
-  background-color: var(--st-secondary-focus);
+  background-color: var(--st-secondary);
   color: var(--st-secondary-text);
-}
-.st-list.st-list--fill .st-list__section .st-list__header {
-  padding: 0.5rem;
-  margin-bottom: 0;
-}
-.st-list.st-list--fill .st-list__section *:not(.st-list__header) {
-  padding: 0.5rem;
 }
 .st-list.st-list--big .st-list__section .st-list__header {
   font-size: 1.5rem;
   padding: 0.75rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .st-list.st-list--big .st-list__section *:not(.st-list__header) {
-  padding: 0.3em 0.75rem;
+  padding: 0.3rem 0.75rem;
   font-size: 1.25rem;
 }
 .st-list.st-list--big.st-list--fill .st-list__section .st-list__header {
   padding: 0.75rem;
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
 }
 .st-list.st-list--big.st-list--fill .st-list__section *:not(.st-list__header) {
   padding: 0.75rem;
@@ -558,26 +556,29 @@ body {
 }
 .st-list.st-list--medium.st-list--fill .st-list__section .st-list__header {
   padding: 0.5rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 .st-list.st-list--medium.st-list--fill .st-list__section *:not(.st-list__header) {
   padding: 0.5rem;
 }
 .st-list.st-list--small .st-list__section .st-list__header {
   font-size: 1rem;
-  padding: 0.4rem;
+  padding: 0.3rem;
   margin-bottom: 0.3rem;
 }
 .st-list.st-list--small .st-list__section *:not(.st-list__header) {
-  padding: 0.2em 0.4rem;
+  padding: 0.3em 0.3rem;
   font-size: 0.8rem;
 }
 .st-list.st-list--small.st-list--fill .st-list__section .st-list__header {
-  padding: 0.75rem;
-  margin-bottom: 0;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .st-list.st-list--small.st-list--fill .st-list__section *:not(.st-list__header) {
-  padding: 0.75rem;
+  padding: 0.5rem;
+}
+.st-list.st-list--full {
+  width: 100%;
 }
 .st-table {
   border-collapse: collapse;

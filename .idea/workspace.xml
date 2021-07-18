@@ -19,21 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="Tooltips and such">
-      <change afterPath="$PROJECT_DIR$/src/controls.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/form.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/general.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/palette.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/table.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/text.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tooltip.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stimetable.less" afterDir="false" />
+    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="Changed to less and more modularized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/text.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/text.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stimetable.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +63,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/wrappers/react/lib/components/Button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_interpreter_path" value="D:/SoftwareDevelopmentKits/Node/Node12-16-3/node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -86,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Folder2020\Projects\NpmProjects\stimetable.css" />
       <recent name="E:\Folder2020\Projects\NpmProjects\stimetable.css\wrappers\react\lib\components\Button" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -192,7 +183,7 @@
       <workItem from="1615367244409" duration="22000" />
       <workItem from="1615450354326" duration="185000" />
       <workItem from="1618985500610" duration="1201000" />
-      <workItem from="1626596636291" duration="6907000" />
+      <workItem from="1626596636291" duration="9087000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -264,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603776803948</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed to less and more modularized">
+      <created>1626608171404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626608171404</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +292,7 @@
     <MESSAGE value="Changed README" />
     <MESSAGE value="Added Lists" />
     <MESSAGE value="Tooltips and such" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tooltips and such" />
+    <MESSAGE value="Changed to less and more modularized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed to less and more modularized" />
   </component>
 </project>
