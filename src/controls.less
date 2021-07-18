@@ -1,0 +1,295 @@
+// buttons
+.st-button {
+    padding: 0.5rem 1rem;
+
+    background-color: var(--st-background);
+    color: var(--st-text);
+
+    border: 1px solid var(--st-secondary);
+
+    font: inherit;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: var(--st-background-hover);
+    }
+
+    &:active {
+        background-color: var(--st-background-focus);
+        border: 1px solid var(--st-primary);
+    }
+
+    // nested
+    &.st-button--primary {
+        border-color: var(--st-primary);
+
+        &:hover {
+            border: 1px solid var(--st-primary-hover);
+        }
+
+        &:active {
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-button--fill {
+            background-color: var(--st-primary);
+            color: var(--st-primary-text);
+
+            &:hover {
+                background-color: var(--st-primary-hover);
+            }
+
+            &:active {
+                background-color: var(--st-primary-focus);
+            }
+        }
+    }
+
+    &.st-button--secondary {
+        border-color: var(--st-secondary);
+
+
+        &:hover {
+            border: 1px solid var(--st-secondary-hover);
+        }
+
+        &:active {
+            border: 1px solid var(--st-secondary-focus);
+        }
+
+        &.st-button--fill {
+            background-color: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &:hover {
+                background-color: var(--st-secondary-hover);
+            }
+
+            &:active {
+                background-color: var(--st-secondary-focus);
+            }
+        }
+    }
+
+    // button modifiers
+    &.st-button--big:extend(.st-text.st-text--big) {
+        padding: 0.75rem 1.5rem;
+    }
+
+    &.st-button--medium:extend(.st-text.st-text--medium) {
+        padding: 0.5rem 1rem;
+    }
+
+    &.st-button--small:extend(.st-text.st-text--small) {
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+// inputs
+.st-input {
+    padding: 1rem;
+    height: 3rem;
+
+    font: inherit;
+
+    background-color: var(--st-background);
+    border: 1px solid var(--st-secondary);
+
+    color: var(--st-text);
+
+    &::placeholder {
+        color: var(--st-text-dim);
+    }
+
+    &:hover {
+        background-color: var(--st-background-hover);
+    }
+
+    &:focus {
+        background-color: var(--st-background-focus);
+        border: 1px solid var(--st-primary);
+        outline: none;
+    }
+
+    // nested
+    &.st-input--primary {
+        border: 1px solid var(--st-primary);
+
+        &:hover {
+            border: 1px solid var(--st-primary-hover);
+        }
+
+        &:focus {
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-input--fill {
+            background-color: var(--st-primary);
+            color: var(--st-primary-text);
+
+            &::placeholder {
+                color: var(--st-primary-text-dim);
+            }
+
+            &:hover {
+                background-color: var(--st-primary-hover);
+            }
+
+            &:focus {
+                background-color: var(--st-primary-focus);
+            }
+        }
+    }
+
+    &.st-input--secondary {
+        border: 1px solid var(--st-secondary);
+
+        &:hover {
+            border: 1px solid var(--st-secondary-hover);
+        }
+
+        &:focus {
+            border: 1px solid var(--st-secondary-focus);
+        }
+
+        &.st-input--fill {
+            background-color: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &::placeholder {
+                color: var(--st-secondary-text-dim);
+            }
+
+            &:hover {
+                background-color: var(--st-secondary-hover);
+            }
+
+            &:focus {
+                background-color: var(--st-secondary-focus);
+            }
+        }
+    }
+
+    // input sizes
+    &.st-input--big:extend(.st-text.st-text--big) {
+        padding: 1rem 1rem;
+        height: 4rem;
+    }
+
+    &.st-input--medium:extend(.st-text.st-text--medium) {
+        padding: 1rem;
+        height: 3rem;
+    }
+
+    &.st-input--small:extend(.st-text.st-text--small) {
+        padding: 0.5rem;
+        height: 2rem;
+    }
+}
+
+// select
+.st-select {
+    width: auto;
+    padding: 0.2rem;
+    font: inherit;
+
+    background: var(--st-background);
+    color: var(--st-text);
+
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+
+    & > option {
+        background: var(--st-background);
+        color: var(--st-text);
+    }
+
+    &:hover {
+        background: var(--st-background-hover);
+    }
+
+    &:focus {
+        background: var(--st-background-hover);
+        border: 1px solid var(--st-primary);
+        outline: none;
+    }
+
+    // nested
+
+    &.st-select--primary {
+        border-color: var(--st-primary);
+
+        &:hover {
+            border-color: var(--st-primary-hover);
+        }
+
+        &:focus {
+            border: 1px solid var(--st-primary-focus);
+        }
+
+        &.st-select--fill {
+            background: var(--st-primary);
+            color: var(--st-primary-text);
+
+            &:hover {
+                background: var(--st-primary-hover);
+            }
+
+            & > option {
+                background: var(--st-primary-hover);
+                color: var(--st-primary-text);
+            }
+
+            &:focus {
+                background: var(--st-primary-focus);
+            }
+        }
+
+    }
+
+    &.st-select--secondary {
+        border-color: var(--st-secondary);
+
+        &:hover {
+            border-color: var(--st-secondary-hover);
+        }
+
+        &:focus {
+            border: 1px solid var(--st-secondary-hover);
+        }
+
+        &.st-select--fill {
+            background: var(--st-secondary);
+            color: var(--st-secondary-text);
+
+            &:hover {
+                background: var(--st-secondary-hover);
+            }
+
+            & > option {
+                background: var(--st-secondary-hover);
+                color: var(--st-secondary-text);
+            }
+
+            &:focus {
+                background: var(--st-secondary-hover);
+            }
+        }
+    }
+
+    &.st-select--small:extend(.st-text.st-text--small) {
+        padding: 0.1rem;
+    }
+
+    &.st-select--medium:extend(.st-text.st-text--medium) {
+        padding: 0.2rem;
+    }
+
+    &.st-select--big:extend(.st-text.st-text--big) {
+        padding: 0.3rem;
+    }
+}

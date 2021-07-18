@@ -1,6 +1,6 @@
 {
   "name": "stimetable.css",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Custom Stylesheet Package for STimetable",
   "main": "stimetable.css",
   "style": "stimetable.css",
@@ -11,9 +11,11 @@
   "author": "Troppydash",
   "license": "MIT",
   "scripts": {
+    "build": "lessc stimetable.less stimetable.css",
     "dev": "http-server -p 6969 -o test.html -c-1"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "less": "^4.1.1"
   }
 }

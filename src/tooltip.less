@@ -1,0 +1,41 @@
+// tooltip
+.st-tooltip {
+    position: relative;
+    width: fit-content;
+
+    &.st-tooltip--inline {
+        display: inline-block;
+    }
+
+    span.st-tooltip__text {
+        visibility: hidden;
+        background-color: var(--st-background-hover);
+        color: var(--st-text);
+        padding: 0.25rem 0.5rem;
+        white-space: nowrap;
+
+        box-shadow: 0 0 5px 3px var(--st-background);
+        border: 1px solid var(--st-text);
+
+        z-index: 1;
+        position: absolute;
+        bottom: 100% + 3px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        pointer-events: none;
+
+        &.st-tooltip--top {}
+
+        &.st-tooltip--bottom {
+            bottom: 0;
+            top: 100% + 3px;
+        }
+    }
+
+    &:hover {
+        .st-tooltip__text {
+            visibility: visible;
+        }
+    }
+}

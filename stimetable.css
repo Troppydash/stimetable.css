@@ -1,1 +1,689 @@
-:root{--st-primary: #b82832;--st-primary-hover: #b52732;--st-primary-focus: #a72531;--st-primary-text: white;--st-primary-text-dim: #dedede;--st-secondary: #6b6b6b;--st-secondary-hover: #656565;--st-secondary-focus: #606060;--st-secondary-text: white;--st-secondary-text-dim: #dedede;--st-highlight: #f2f2f2;--st-background: white;--st-background-hover: #fafafa;--st-background-focus: #f4f4f4;--st-text: black;--st-text-dim: #282828}html,body{font-family:"Roboto Light",sans-serif;background-color:var(--st-background)}*{box-sizing:border-box}.st-text{font:inherit;margin:0;padding:0;color:var(--st-text)}.st-text.st-text--link{text-decoration:underline;cursor:pointer}.st-text.st-text--link:active{color:var(--st-text-dim)}.st-text.st-text--primary{color:var(--st-primary)}.st-text.st-text--primary.st-text--link:active{color:var(--st-primary-focus)}.st-text.st-text--secondary{color:var(--st-secondary)}.st-text.st-text--secondary.st-text--link:active{color:var(--st-secondary-focus)}.st-button,.st-form .st-form__control .st-form__submit--medium,.st-form .st-form__control .st-form__submit{padding:.5rem 1rem;background-color:var(--st-background);color:var(--st-text);border:1px solid var(--st-secondary);font:inherit}.st-button:focus,.st-form .st-form__control .st-form__submit--medium:focus,.st-form .st-form__control .st-form__submit:focus{outline:none}.st-button:hover,.st-form .st-form__control .st-form__submit--medium:hover,.st-form .st-form__control .st-form__submit:hover{background-color:var(--st-background-hover)}.st-button:active,.st-form .st-form__control .st-form__submit--medium:active,.st-form .st-form__control .st-form__submit:active{background-color:var(--st-background-focus);border:1px solid var(--st-primary)}.st-button.st-button--primary,.st-form .st-form__control .st-button--primary.st-form__submit--medium,.st-form .st-form__control .st-button.st-form__submit--primary,.st-form .st-form__control .st-form__submit--primary.st-form__submit--medium,.st-form .st-form__control .st-button--primary.st-form__submit,.st-form .st-form__control .st-form__submit.st-form__submit--primary{border-color:var(--st-primary)}.st-button.st-button--primary:hover,.st-form .st-form__control .st-button--primary.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-form__submit--primary:hover,.st-form .st-form__control .st-form__submit--primary.st-form__submit--medium:hover,.st-form .st-form__control .st-button--primary.st-form__submit:hover,.st-form .st-form__control .st-form__submit.st-form__submit--primary:hover{border:1px solid var(--st-primary-hover)}.st-button.st-button--primary:active,.st-form .st-form__control .st-button--primary.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-form__submit--primary:active,.st-form .st-form__control .st-form__submit--primary.st-form__submit--medium:active,.st-form .st-form__control .st-button--primary.st-form__submit:active,.st-form .st-form__control .st-form__submit.st-form__submit--primary:active{border:1px solid var(--st-primary-focus)}.st-button.st-button--primary.st-button--fill,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium,.st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill,.st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary,.st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium,.st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill,.st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit,.st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary,.st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill{background-color:var(--st-primary);color:var(--st-primary-text)}.st-button.st-button--primary.st-button--fill:hover,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill:hover,.st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary:hover,.st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill:hover,.st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit:hover,.st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill:hover,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary:hover,.st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill:hover{background-color:var(--st-primary-hover)}.st-button.st-button--primary.st-button--fill:active,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-button--primary.st-form__submit--secondary.st-form__submit--fill:active,.st-form .st-form__control .st-button--primary.st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--primary:active,.st-form .st-form__control .st-button--fill.st-form__submit--primary.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-form__submit--primary.st-form__submit--fill:active,.st-form .st-form__control .st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button--primary.st-button--fill.st-form__submit:active,.st-form .st-form__control .st-button--primary.st-form__submit.st-form__submit--secondary.st-form__submit--fill:active,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--primary:active,.st-form .st-form__control .st-form__submit.st-form__submit--primary.st-form__submit--fill:active{background-color:var(--st-primary-focus)}.st-button.st-button--secondary,.st-form .st-form__control .st-button--secondary.st-form__submit--medium,.st-form .st-form__control .st-button.st-form__submit--secondary,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium,.st-form .st-form__control .st-button--secondary.st-form__submit,.st-form .st-form__control .st-form__submit.st-form__submit--secondary{border-color:var(--st-secondary)}.st-button.st-button--secondary:hover,.st-form .st-form__control .st-button--secondary.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-form__submit--secondary:hover,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium:hover,.st-form .st-form__control .st-button--secondary.st-form__submit:hover,.st-form .st-form__control .st-form__submit.st-form__submit--secondary:hover{border:1px solid var(--st-secondary-hover)}.st-button.st-button--secondary:active,.st-form .st-form__control .st-button--secondary.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-form__submit--secondary:active,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--medium:active,.st-form .st-form__control .st-button--secondary.st-form__submit:active,.st-form .st-form__control .st-form__submit.st-form__submit--secondary:active{border:1px solid var(--st-secondary-focus)}.st-button.st-button--secondary.st-button--fill,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary,.st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium,.st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium,.st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill,.st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary,.st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill,.st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill{background-color:var(--st-secondary);color:var(--st-secondary-text)}.st-button.st-button--secondary.st-button--fill:hover,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary:hover,.st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill:hover,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill:hover,.st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:hover,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit:hover,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary:hover,.st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill:hover,.st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill:hover{background-color:var(--st-secondary-hover)}.st-button.st-button--secondary.st-button--fill:active,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-button--fill.st-form__submit--secondary:active,.st-form .st-form__control .st-button--fill.st-form__submit--secondary.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-form__submit--secondary.st-form__submit--fill:active,.st-form .st-form__control .st-form__submit--secondary.st-form__submit--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button.st-button--secondary.st-form__submit--primary.st-form__submit--fill:active,.st-form .st-form__control .st-button--secondary.st-form__submit--primary.st-form__submit--fill.st-form__submit--medium:active,.st-form .st-form__control .st-button--secondary.st-button--fill.st-form__submit:active,.st-form .st-form__control .st-button--fill.st-form__submit.st-form__submit--secondary:active,.st-form .st-form__control .st-form__submit.st-form__submit--secondary.st-form__submit--fill:active,.st-form .st-form__control .st-button--secondary.st-form__submit.st-form__submit--primary.st-form__submit--fill:active{background-color:var(--st-secondary-focus)}.st-button.st-button--big,.st-form .st-form__control .st-button--big.st-form__submit--medium,.st-form .st-form__control .st-button.st-form__submit--big,.st-form .st-form__control .st-form__submit--big.st-form__submit--medium,.st-form .st-form__control .st-button--big.st-form__submit,.st-form .st-form__control .st-form__submit.st-form__submit--big{padding:.75rem 1.5rem}.st-button.st-button--medium,.st-form .st-form__control .st-button--medium.st-form__submit--medium,.st-form .st-form__control .st-button--medium.st-form__submit{padding:.5rem 1rem}.st-button.st-button--small,.st-form .st-form__control .st-button.st-form__submit--small,.st-form .st-form__control .st-button--small.st-form__submit--medium,.st-form .st-form__control .st-form__submit--medium.st-form__submit--small,.st-form .st-form__control .st-button--small.st-form__submit,.st-form .st-form__control .st-form__submit.st-form__submit--small{padding:.25rem .5rem}.st-input,.st-form .st-form__control .st-form__input{padding:1rem;height:3rem;font:inherit;background-color:var(--st-background);border:1px solid var(--st-secondary);color:var(--st-text)}.st-input::placeholder,.st-form .st-form__control .st-form__input::placeholder{color:var(--st-text-dim)}.st-input:hover,.st-form .st-form__control .st-form__input:hover{background-color:var(--st-background-hover)}.st-input:focus,.st-form .st-form__control .st-form__input:focus{background-color:var(--st-background-focus);border:1px solid var(--st-primary);outline:none}.st-input.st-input--primary,.st-form .st-form__control .st-input.st-form__input--primary,.st-form .st-form__control .st-input--primary.st-form__input,.st-form .st-form__control .st-form__input.st-form__input--primary{border:1px solid var(--st-primary)}.st-input.st-input--primary:hover,.st-form .st-form__control .st-input.st-form__input--primary:hover,.st-form .st-form__control .st-input--primary.st-form__input:hover,.st-form .st-form__control .st-form__input.st-form__input--primary:hover{border:1px solid var(--st-primary-hover)}.st-input.st-input--primary:focus,.st-form .st-form__control .st-input.st-form__input--primary:focus,.st-form .st-form__control .st-input--primary.st-form__input:focus,.st-form .st-form__control .st-form__input.st-form__input--primary:focus{border:1px solid var(--st-primary-focus)}.st-input.st-input--primary.st-input--fill,.st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill,.st-form .st-form__control .st-input.st-input--fill.st-form__input--primary,.st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill,.st-form .st-form__control .st-input--primary.st-input--fill.st-form__input,.st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary,.st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill{background-color:var(--st-primary);color:var(--st-primary-text)}.st-input.st-input--primary.st-input--fill::placeholder,.st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input.st-input--fill.st-form__input--primary::placeholder,.st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input--primary.st-input--fill.st-form__input::placeholder,.st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary::placeholder,.st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill::placeholder{color:var(--st-primary-text-dim)}.st-input.st-input--primary.st-input--fill:hover,.st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill:hover,.st-form .st-form__control .st-input.st-input--fill.st-form__input--primary:hover,.st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill:hover,.st-form .st-form__control .st-input--primary.st-input--fill.st-form__input:hover,.st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill:hover,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary:hover,.st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill:hover{background-color:var(--st-primary-hover)}.st-input.st-input--primary.st-input--fill:focus,.st-form .st-form__control .st-input.st-input--primary.st-form__input--secondary.st-form__input--fill:focus,.st-form .st-form__control .st-input.st-input--fill.st-form__input--primary:focus,.st-form .st-form__control .st-input.st-form__input--primary.st-form__input--fill:focus,.st-form .st-form__control .st-input--primary.st-input--fill.st-form__input:focus,.st-form .st-form__control .st-input--primary.st-form__input.st-form__input--secondary.st-form__input--fill:focus,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--primary:focus,.st-form .st-form__control .st-form__input.st-form__input--primary.st-form__input--fill:focus{background-color:var(--st-primary-focus)}.st-input.st-input--secondary,.st-form .st-form__control .st-input.st-form__input--secondary,.st-form .st-form__control .st-input--secondary.st-form__input,.st-form .st-form__control .st-form__input.st-form__input--secondary{border:1px solid var(--st-secondary)}.st-input.st-input--secondary:hover,.st-form .st-form__control .st-input.st-form__input--secondary:hover,.st-form .st-form__control .st-input--secondary.st-form__input:hover,.st-form .st-form__control .st-form__input.st-form__input--secondary:hover{border:1px solid var(--st-secondary-hover)}.st-input.st-input--secondary:focus,.st-form .st-form__control .st-input.st-form__input--secondary:focus,.st-form .st-form__control .st-input--secondary.st-form__input:focus,.st-form .st-form__control .st-form__input.st-form__input--secondary:focus{border:1px solid var(--st-secondary-focus)}.st-input.st-input--secondary.st-input--fill,.st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary,.st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill,.st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill,.st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary,.st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill,.st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill{background-color:var(--st-secondary);color:var(--st-secondary-text)}.st-input.st-input--secondary.st-input--fill::placeholder,.st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary::placeholder,.st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input::placeholder,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary::placeholder,.st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill::placeholder,.st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill::placeholder{color:var(--st-secondary-text-dim)}.st-input.st-input--secondary.st-input--fill:hover,.st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary:hover,.st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill:hover,.st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill:hover,.st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input:hover,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary:hover,.st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill:hover,.st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill:hover{background-color:var(--st-secondary-hover)}.st-input.st-input--secondary.st-input--fill:focus,.st-form .st-form__control .st-input.st-input--fill.st-form__input--secondary:focus,.st-form .st-form__control .st-input.st-form__input--secondary.st-form__input--fill:focus,.st-form .st-form__control .st-input.st-input--secondary.st-form__input--primary.st-form__input--fill:focus,.st-form .st-form__control .st-input--secondary.st-input--fill.st-form__input:focus,.st-form .st-form__control .st-input--fill.st-form__input.st-form__input--secondary:focus,.st-form .st-form__control .st-form__input.st-form__input--secondary.st-form__input--fill:focus,.st-form .st-form__control .st-input--secondary.st-form__input.st-form__input--primary.st-form__input--fill:focus{background-color:var(--st-secondary-focus)}.st-input.st-input--big,.st-form .st-form__control .st-input.st-form__input--big,.st-form .st-form__control .st-input--big.st-form__input,.st-form .st-form__control .st-form__input.st-form__input--big{padding:1rem 1rem;height:4rem}.st-input.st-input--medium,.st-form .st-form__control .st-input.st-form__input--medium,.st-form .st-form__control .st-input--medium.st-form__input,.st-form .st-form__control .st-form__input.st-form__input--medium{padding:1rem;height:3rem}.st-input.st-input--small,.st-form .st-form__control .st-input.st-form__input--small,.st-form .st-form__control .st-input--small.st-form__input,.st-form .st-form__control .st-form__input.st-form__input--small{padding:.5rem;height:2rem}.st-select,.st-form .st-form__control .st-form__select{width:auto;padding:.2rem;font:inherit;background:var(--st-background);color:var(--st-text);text-align:center;text-align-last:center;-moz-text-align-last:center}.st-select>option,.st-form .st-form__control .st-form__select>option{background:var(--st-background);color:var(--st-text)}.st-select:hover,.st-form .st-form__control .st-form__select:hover{background:var(--st-background-hover)}.st-select:focus,.st-form .st-form__control .st-form__select:focus{background:var(--st-background-hover);border:1px solid var(--st-primary);outline:none}.st-select.st-select--primary,.st-form .st-form__control .st-select.st-form__select--primary,.st-form .st-form__control .st-select--primary.st-form__select,.st-form .st-form__control .st-form__select.st-form__select--primary{border-color:var(--st-primary)}.st-select.st-select--primary:hover,.st-form .st-form__control .st-select.st-form__select--primary:hover,.st-form .st-form__control .st-select--primary.st-form__select:hover,.st-form .st-form__control .st-form__select.st-form__select--primary:hover{border-color:var(--st-primary-hover)}.st-select.st-select--primary:focus,.st-form .st-form__control .st-select.st-form__select--primary:focus,.st-form .st-form__control .st-select--primary.st-form__select:focus,.st-form .st-form__control .st-form__select.st-form__select--primary:focus{border:1px solid var(--st-primary-focus)}.st-select.st-select--primary.st-select--fill,.st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill,.st-form .st-form__control .st-select.st-select--fill.st-form__select--primary,.st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill,.st-form .st-form__control .st-select--primary.st-select--fill.st-form__select,.st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary,.st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill{background:var(--st-primary);color:var(--st-primary-text)}.st-select.st-select--primary.st-select--fill:hover,.st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill:hover,.st-form .st-form__control .st-select.st-select--fill.st-form__select--primary:hover,.st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill:hover,.st-form .st-form__control .st-select--primary.st-select--fill.st-form__select:hover,.st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill:hover,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary:hover,.st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill:hover{background:var(--st-primary-hover)}.st-select.st-select--primary.st-select--fill>option,.st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill>option,.st-form .st-form__control .st-select.st-select--fill.st-form__select--primary>option,.st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill>option,.st-form .st-form__control .st-select--primary.st-select--fill.st-form__select>option,.st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill>option,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary>option,.st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill>option{background:var(--st-primary-hover);color:var(--st-primary-text)}.st-select.st-select--primary.st-select--fill:focus,.st-form .st-form__control .st-select.st-select--primary.st-form__select--secondary.st-form__select--fill:focus,.st-form .st-form__control .st-select.st-select--fill.st-form__select--primary:focus,.st-form .st-form__control .st-select.st-form__select--primary.st-form__select--fill:focus,.st-form .st-form__control .st-select--primary.st-select--fill.st-form__select:focus,.st-form .st-form__control .st-select--primary.st-form__select.st-form__select--secondary.st-form__select--fill:focus,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--primary:focus,.st-form .st-form__control .st-form__select.st-form__select--primary.st-form__select--fill:focus{background:var(--st-primary-focus)}.st-select.st-select--secondary,.st-form .st-form__control .st-select.st-form__select--secondary,.st-form .st-form__control .st-select--secondary.st-form__select,.st-form .st-form__control .st-form__select.st-form__select--secondary{border-color:var(--st-secondary)}.st-select.st-select--secondary:hover,.st-form .st-form__control .st-select.st-form__select--secondary:hover,.st-form .st-form__control .st-select--secondary.st-form__select:hover,.st-form .st-form__control .st-form__select.st-form__select--secondary:hover{border-color:var(--st-secondary-hover)}.st-select.st-select--secondary:focus,.st-form .st-form__control .st-select.st-form__select--secondary:focus,.st-form .st-form__control .st-select--secondary.st-form__select:focus,.st-form .st-form__control .st-form__select.st-form__select--secondary:focus{border:1px solid var(--st-secondary-hover)}.st-select.st-select--secondary.st-select--fill,.st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary,.st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill,.st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill,.st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary,.st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill,.st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill{background:var(--st-secondary);color:var(--st-secondary-text)}.st-select.st-select--secondary.st-select--fill:hover,.st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary:hover,.st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill:hover,.st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill:hover,.st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select:hover,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary:hover,.st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill:hover,.st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill:hover{background:var(--st-secondary-hover)}.st-select.st-select--secondary.st-select--fill>option,.st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary>option,.st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill>option,.st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill>option,.st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select>option,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary>option,.st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill>option,.st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill>option{background:var(--st-secondary-hover);color:var(--st-secondary-text)}.st-select.st-select--secondary.st-select--fill:focus,.st-form .st-form__control .st-select.st-select--fill.st-form__select--secondary:focus,.st-form .st-form__control .st-select.st-form__select--secondary.st-form__select--fill:focus,.st-form .st-form__control .st-select.st-select--secondary.st-form__select--primary.st-form__select--fill:focus,.st-form .st-form__control .st-select--secondary.st-select--fill.st-form__select:focus,.st-form .st-form__control .st-select--fill.st-form__select.st-form__select--secondary:focus,.st-form .st-form__control .st-form__select.st-form__select--secondary.st-form__select--fill:focus,.st-form .st-form__control .st-select--secondary.st-form__select.st-form__select--primary.st-form__select--fill:focus{background:var(--st-secondary-hover)}.st-select.st-select--small,.st-form .st-form__control .st-select.st-form__select--small,.st-form .st-form__control .st-select--small.st-form__select,.st-form .st-form__control .st-form__select.st-form__select--small{padding:.1rem}.st-select.st-select--medium,.st-form .st-form__control .st-select.st-form__select--medium,.st-form .st-form__control .st-select--medium.st-form__select,.st-form .st-form__control .st-form__select.st-form__select--medium{padding:.2rem}.st-select.st-select--big,.st-form .st-form__control .st-select.st-form__select--big,.st-form .st-form__control .st-select--big.st-form__select,.st-form .st-form__control .st-form__select.st-form__select--big{padding:.3rem}.st-form{margin:0;padding:0}.st-form .st-form__control{margin:1rem 0}.st-form .st-form__control .st-form__label{padding:.25rem;display:inline-flex;justify-content:left;align-items:center}.st-form .st-form__control .st-form__label label,.st-form .st-form__control .st-form__label span{margin-right:.5rem;color:var(--st-text)}.st-form .st-form__control .st-form__label--multi{flex-direction:column;justify-content:left;align-items:flex-start}.st-form .st-form__control .st-form__label--multi span{margin-right:0;margin-bottom:.5rem}.st-form .st-form__control .st-form__label--full{width:100%}.st-form .st-form__control .st-form__label--full .st-form__input{width:100%}.st-form .st-form__control .st-form__label--settings{width:100%;justify-content:space-between}.st-form .st-form__control .st-form__submit{min-width:200px}.st-form .st-form__control .st-form__submit--big{min-width:300px}.st-form .st-form__control .st-form__submit--medium{min-width:200px}.st-form .st-form__control .st-form__submit--small{min-width:100px}.st-form .st-form__control--small{margin:.5rem 0}.st-form .st-form__control--small>.st-form__label{padding:.05rem 0}.st-form .st-form__control--big{margin:1.5rem 0}.st-form .st-form__control--big>.st-form__label{padding:.75rem 0}.st-form .st-form__control--medium{margin:1rem 0}.st-form .st-form__control--medium>.st-form__label{padding:.25rem}.st-table{border-collapse:collapse;text-align:left}.st-table thead tr{border-width:2px}.st-table thead tr th{padding:.6rem 1.5rem;font-weight:normal;font-size:1.25rem;color:var(--st-text)}.st-table tr{border-bottom:1px solid var(--st-text)}.st-table tbody{font-family:Roboto,sans-serif}.st-table tbody tr td{padding:1rem 1.5rem;color:var(--st-text)}.st-table tbody tr:hover{background:var(--st-background-hover)}.st-table.st-table--full{width:100%}.st-table.st-table--small thead tr th{padding:.45rem .5rem;font-size:1.15rem}.st-table.st-table--small tbody tr td{padding:.7rem .5rem;font-size:.85rem}.st-table.st-table--medium thead tr th{padding:.6rem 1.5rem}.st-table.st-table--medium tbody tr td{padding:1rem 1.5rem}.st-table.st-table--big thead tr th{padding:.8rem 2.25rem}.st-table.st-table--big tbody tr td{padding:1.25rem 2.25rem}.st-table.st-table--primary thead tr{border-bottom:none}.st-table.st-table--primary thead tr th{background:var(--st-primary);color:var(--st-primary-text)}.st-table.st-table--primary tr{border-bottom:1px solid var(--st-primary)}.st-table.st-table--secondary thead tr{border-bottom:none}.st-table.st-table--secondary thead tr th{background:var(--st-secondary);color:var(--st-secondary-text)}.st-table.st-table--secondary tr{border-bottom:1px solid var(--st-secondary)}.st-list .st-list__section{list-style-type:none;margin:0;padding:0;background-color:var(--st-background);color:var(--st-text);width:fit-content}.st-list .st-list__section .st-list__header{font-size:1.25rem;padding:.5rem;border-bottom:1px solid var(--st-text);margin-bottom:.5rem}.st-list .st-list__section *:not(.st-list__header){padding:.25rem .5rem}.st-list.st-list--primary .st-list__section .st-list__header{border-bottom:1px solid var(--st-primary)}.st-list.st-list--primary.st-list--fill .st-list__section .st-list__header{border-bottom:none;background-color:var(--st-primary-focus);color:var(--st-primary-text)}.st-list.st-list--secondary .st-list__section .st-list__header{border-bottom:1px solid var(--st-secondary)}.st-list.st-list--secondary.st-list--fill .st-list__section .st-list__header{border-bottom:none;background-color:var(--st-secondary-focus);color:var(--st-secondary-text)}.st-list.st-list--fill .st-list__section .st-list__header{padding:.5rem;margin-bottom:0}.st-list.st-list--fill .st-list__section *:not(.st-list__header){padding:.5rem}.st-list.st-list--big .st-list__section .st-list__header{font-size:1.5rem;padding:.75rem;margin-bottom:.25rem}.st-list.st-list--big .st-list__section *:not(.st-list__header){padding:.3em .75rem;font-size:1.25rem}.st-list.st-list--big.st-list--fill .st-list__section .st-list__header{padding:.75rem;margin-bottom:0}.st-list.st-list--big.st-list--fill .st-list__section *:not(.st-list__header){padding:.75rem}.st-list.st-list--medium .st-list__section .st-list__header{font-size:1.25rem;padding:.5rem;margin-bottom:.5rem}.st-list.st-list--medium .st-list__section *:not(.st-list__header){padding:.25em .5rem;font-size:1rem}.st-list.st-list--medium.st-list--fill .st-list__section .st-list__header{padding:.5rem;margin-bottom:0}.st-list.st-list--medium.st-list--fill .st-list__section *:not(.st-list__header){padding:.5rem}.st-list.st-list--small .st-list__section .st-list__header{font-size:1rem;padding:.4rem;margin-bottom:.3rem}.st-list.st-list--small .st-list__section *:not(.st-list__header){padding:.2em .4rem;font-size:.8rem}.st-list.st-list--small.st-list--fill .st-list__section .st-list__header{padding:.75rem;margin-bottom:0}.st-list.st-list--small.st-list--fill .st-list__section *:not(.st-list__header){padding:.75rem}.st-tooltip{position:relative;width:fit-content}.st-tooltip.st-tooltip--inline{display:inline-block}.st-tooltip span.st-tooltip__text{visibility:hidden;background-color:var(--st-background-hover);color:var(--st-text);padding:.25rem .5rem;white-space:nowrap;box-shadow:0 0 5px 3px var(--st-background);border:1px solid var(--st-text);z-index:1;position:absolute;bottom:calc(100% + 3px);left:50%;transform:translateX(-50%);pointer-events:none}.st-tooltip:hover .st-tooltip__text{visibility:visible}.st-text.st-text--big,.st-text.st-button.st-button--big,.st-text.st-input.st-input--big,.st-text.st-select.st-select--big,.st-form .st-form__control .st-text.st-input--big.st-form__input,.st-form .st-form__control .st-text.st-input.st-form__input--big,.st-form .st-form__control .st-text.st-form__input.st-form__input--big,.st-form .st-form__control .st-text.st-select--big.st-form__select,.st-form .st-form__control .st-text.st-select.st-form__select--big,.st-form .st-form__control .st-text.st-form__select.st-form__select--big,.st-form .st-form__control .st-text.st-button--big.st-form__submit,.st-form .st-form__control .st-text.st-button.st-form__submit--big,.st-form .st-form__control .st-text.st-form__submit.st-form__submit--big,.st-form .st-form__control .st-text.st-button--big.st-form__submit--medium,.st-form .st-form__control .st-text.st-form__submit--big.st-form__submit--medium{font-size:1.5rem}.st-text.st-text--medium,.st-text.st-button.st-button--medium,.st-text.st-input.st-input--medium,.st-text.st-select.st-select--medium,.st-form .st-form__control .st-text.st-input--medium.st-form__input,.st-form .st-form__control .st-text.st-input.st-form__input--medium,.st-form .st-form__control .st-text.st-form__input.st-form__input--medium,.st-form .st-form__control .st-text.st-select--medium.st-form__select,.st-form .st-form__control .st-text.st-select.st-form__select--medium,.st-form .st-form__control .st-text.st-form__select.st-form__select--medium,.st-form .st-form__control .st-text.st-button--medium.st-form__submit,.st-form .st-form__control .st-text.st-button--medium.st-form__submit--medium{font-size:1rem}.st-text.st-text--small,.st-text.st-button.st-button--small,.st-text.st-input.st-input--small,.st-text.st-select.st-select--small,.st-form .st-form__control .st-text.st-input--small.st-form__input,.st-form .st-form__control .st-text.st-input.st-form__input--small,.st-form .st-form__control .st-text.st-form__input.st-form__input--small,.st-form .st-form__control .st-text.st-select--small.st-form__select,.st-form .st-form__control .st-text.st-select.st-form__select--small,.st-form .st-form__control .st-text.st-form__select.st-form__select--small,.st-form .st-form__control .st-text.st-button--small.st-form__submit,.st-form .st-form__control .st-text.st-button--small.st-form__submit--medium,.st-form .st-form__control .st-text.st-button.st-form__submit--small,.st-form .st-form__control .st-text.st-form__submit.st-form__submit--small,.st-form .st-form__control .st-text.st-form__submit--medium.st-form__submit--small{font-size:.75rem}.st-text.st-text--10{font-size:.1rem !important}.st-text.st-text--20{font-size:.2rem !important}.st-text.st-text--30{font-size:.3rem !important}.st-text.st-text--40{font-size:.4rem !important}.st-text.st-text--50{font-size:.5rem !important}.st-text.st-text--60{font-size:.6rem !important}.st-text.st-text--70{font-size:.7rem !important}.st-text.st-text--80{font-size:.8rem !important}.st-text.st-text--90{font-size:.9rem !important}.st-text.st-text--100{font-size:1rem !important}.st-text.st-text--110{font-size:1.1rem !important}.st-text.st-text--120{font-size:1.2rem !important}.st-text.st-text--130{font-size:1.3rem !important}.st-text.st-text--140{font-size:1.4rem !important}.st-text.st-text--150{font-size:1.5rem !important}.st-text.st-text--160{font-size:1.6rem !important}.st-text.st-text--170{font-size:1.7rem !important}.st-text.st-text--180{font-size:1.8rem !important}.st-text.st-text--190{font-size:1.9rem !important}.st-text.st-text--200{font-size:2rem !important}.st-text.st-text--210{font-size:2.1rem !important}.st-text.st-text--220{font-size:2.2rem !important}.st-text.st-text--230{font-size:2.3rem !important}.st-text.st-text--240{font-size:2.4rem !important}.st-text.st-text--250{font-size:2.5rem !important}.st-text.st-text--260{font-size:2.6rem !important}.st-text.st-text--270{font-size:2.7rem !important}.st-text.st-text--280{font-size:2.8rem !important}.st-text.st-text--290{font-size:2.9rem !important}.st-text.st-text--300{font-size:3rem !important}.st-text.st-text--310{font-size:3.1rem !important}.st-text.st-text--320{font-size:3.2rem !important}.st-text.st-text--330{font-size:3.3rem !important}.st-text.st-text--340{font-size:3.4rem !important}.st-text.st-text--350{font-size:3.5rem !important}.st-text.st-text--360{font-size:3.6rem !important}.st-text.st-text--370{font-size:3.7rem !important}.st-text.st-text--380{font-size:3.8rem !important}.st-text.st-text--390{font-size:3.9rem !important}.st-text.st-text--400{font-size:4rem !important}/*# sourceMappingURL=stimetable.css.map */
+:root {
+  --st-primary: #b82832;
+  --st-primary-hover: #b52732;
+  --st-primary-focus: #a72531;
+  --st-primary-text: white;
+  --st-primary-text-dim: #dedede;
+  --st-secondary: #6b6b6b;
+  --st-secondary-hover: #656565;
+  --st-secondary-focus: #606060;
+  --st-secondary-text: white;
+  --st-secondary-text-dim: #dedede;
+  --st-highlight: #f2f2f2;
+  --st-background: white;
+  --st-background-hover: #fafafa;
+  --st-background-focus: #f4f4f4;
+  --st-text: black;
+  --st-text-dim: #282828;
+}
+body.st-dark {
+  --st-primary: #b82832;
+  --st-primary-hover: #9f222c;
+  --st-primary-focus: #8f1f28;
+  --st-primary-text: white;
+  --st-primary-text-dim: #bbb;
+  --st-secondary: #6b6b6b;
+  --st-secondary-hover: #5b5a5a;
+  --st-secondary-focus: #4c4c4c;
+  --st-secondary-text: white;
+  --st-secondary-text-dim: #bbb;
+  --st-highlight: #f2f2f2;
+  --st-background: #282828;
+  --st-background-hover: #323232;
+  --st-background-focus: #3c3c3c;
+  --st-text: #fff;
+  --st-text-dim: #bbb;
+}
+html,
+body {
+  font-family: "Roboto Light", sans-serif;
+  background-color: var(--st-background);
+}
+* {
+  box-sizing: border-box;
+}
+.st-text {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  color: var(--st-text);
+}
+.st-text.st-text--link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.st-text.st-text--link:active {
+  color: var(--st-text-dim);
+}
+.st-text.st-text--primary {
+  color: var(--st-primary);
+}
+.st-text.st-text--primary.st-text--link:active {
+  color: var(--st-primary-focus);
+}
+.st-text.st-text--secondary {
+  color: var(--st-secondary);
+}
+.st-text.st-text--secondary.st-text--link:active {
+  color: var(--st-secondary-focus);
+}
+.st-text.st-text--big,
+.st-button.st-button--big,
+.st-input.st-input--big,
+.st-select.st-select--big {
+  font-size: 1.5rem;
+}
+.st-text.st-text--medium,
+.st-button.st-button--medium,
+.st-input.st-input--medium,
+.st-select.st-select--medium {
+  font-size: 1rem;
+}
+.st-text.st-text--small,
+.st-button.st-button--small,
+.st-input.st-input--small,
+.st-select.st-select--small {
+  font-size: 0.75rem;
+}
+.st-text.st-text--10 {
+  font-size: 0.1rem !important;
+}
+.st-text.st-text--20 {
+  font-size: 0.2rem !important;
+}
+.st-text.st-text--30 {
+  font-size: 0.3rem !important;
+}
+.st-text.st-text--40 {
+  font-size: 0.4rem !important;
+}
+.st-text.st-text--50 {
+  font-size: 0.5rem !important;
+}
+.st-text.st-text--60 {
+  font-size: 0.6rem !important;
+}
+.st-text.st-text--70 {
+  font-size: 0.7rem !important;
+}
+.st-text.st-text--80 {
+  font-size: 0.8rem !important;
+}
+.st-text.st-text--90 {
+  font-size: 0.9rem !important;
+}
+.st-text.st-text--100 {
+  font-size: 1rem !important;
+}
+.st-text.st-text--110 {
+  font-size: 1.1rem !important;
+}
+.st-text.st-text--120 {
+  font-size: 1.2rem !important;
+}
+.st-text.st-text--130 {
+  font-size: 1.3rem !important;
+}
+.st-text.st-text--140 {
+  font-size: 1.4rem !important;
+}
+.st-text.st-text--150 {
+  font-size: 1.5rem !important;
+}
+.st-text.st-text--160 {
+  font-size: 1.6rem !important;
+}
+.st-text.st-text--170 {
+  font-size: 1.7rem !important;
+}
+.st-text.st-text--180 {
+  font-size: 1.8rem !important;
+}
+.st-text.st-text--190 {
+  font-size: 1.9rem !important;
+}
+.st-text.st-text--200 {
+  font-size: 2rem !important;
+}
+.st-text.st-text--210 {
+  font-size: 2.1rem !important;
+}
+.st-text.st-text--220 {
+  font-size: 2.2rem !important;
+}
+.st-text.st-text--230 {
+  font-size: 2.3rem !important;
+}
+.st-text.st-text--240 {
+  font-size: 2.4rem !important;
+}
+.st-text.st-text--250 {
+  font-size: 2.5rem !important;
+}
+.st-text.st-text--260 {
+  font-size: 2.6rem !important;
+}
+.st-text.st-text--270 {
+  font-size: 2.7rem !important;
+}
+.st-text.st-text--280 {
+  font-size: 2.8rem !important;
+}
+.st-text.st-text--290 {
+  font-size: 2.9rem !important;
+}
+.st-text.st-text--300 {
+  font-size: 3rem !important;
+}
+.st-text.st-text--310 {
+  font-size: 3.1rem !important;
+}
+.st-text.st-text--320 {
+  font-size: 3.2rem !important;
+}
+.st-text.st-text--330 {
+  font-size: 3.3rem !important;
+}
+.st-text.st-text--340 {
+  font-size: 3.4rem !important;
+}
+.st-text.st-text--350 {
+  font-size: 3.5rem !important;
+}
+.st-text.st-text--360 {
+  font-size: 3.6rem !important;
+}
+.st-text.st-text--370 {
+  font-size: 3.7rem !important;
+}
+.st-text.st-text--380 {
+  font-size: 3.8rem !important;
+}
+.st-text.st-text--390 {
+  font-size: 3.9rem !important;
+}
+.st-text.st-text--400 {
+  font-size: 4rem !important;
+}
+.st-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--st-background);
+  color: var(--st-text);
+  border: 1px solid var(--st-secondary);
+  font: inherit;
+}
+.st-button:focus {
+  outline: none;
+}
+.st-button:hover {
+  background-color: var(--st-background-hover);
+}
+.st-button:active {
+  background-color: var(--st-background-focus);
+  border: 1px solid var(--st-primary);
+}
+.st-button.st-button--primary {
+  border-color: var(--st-primary);
+}
+.st-button.st-button--primary:hover {
+  border: 1px solid var(--st-primary-hover);
+}
+.st-button.st-button--primary:active {
+  border: 1px solid var(--st-primary-focus);
+}
+.st-button.st-button--primary.st-button--fill {
+  background-color: var(--st-primary);
+  color: var(--st-primary-text);
+}
+.st-button.st-button--primary.st-button--fill:hover {
+  background-color: var(--st-primary-hover);
+}
+.st-button.st-button--primary.st-button--fill:active {
+  background-color: var(--st-primary-focus);
+}
+.st-button.st-button--secondary {
+  border-color: var(--st-secondary);
+}
+.st-button.st-button--secondary:hover {
+  border: 1px solid var(--st-secondary-hover);
+}
+.st-button.st-button--secondary:active {
+  border: 1px solid var(--st-secondary-focus);
+}
+.st-button.st-button--secondary.st-button--fill {
+  background-color: var(--st-secondary);
+  color: var(--st-secondary-text);
+}
+.st-button.st-button--secondary.st-button--fill:hover {
+  background-color: var(--st-secondary-hover);
+}
+.st-button.st-button--secondary.st-button--fill:active {
+  background-color: var(--st-secondary-focus);
+}
+.st-button.st-button--big {
+  padding: 0.75rem 1.5rem;
+}
+.st-button.st-button--medium {
+  padding: 0.5rem 1rem;
+}
+.st-button.st-button--small {
+  padding: 0.25rem 0.5rem;
+}
+.st-input {
+  padding: 1rem;
+  height: 3rem;
+  font: inherit;
+  background-color: var(--st-background);
+  border: 1px solid var(--st-secondary);
+  color: var(--st-text);
+}
+.st-input::placeholder {
+  color: var(--st-text-dim);
+}
+.st-input:hover {
+  background-color: var(--st-background-hover);
+}
+.st-input:focus {
+  background-color: var(--st-background-focus);
+  border: 1px solid var(--st-primary);
+  outline: none;
+}
+.st-input.st-input--primary {
+  border: 1px solid var(--st-primary);
+}
+.st-input.st-input--primary:hover {
+  border: 1px solid var(--st-primary-hover);
+}
+.st-input.st-input--primary:focus {
+  border: 1px solid var(--st-primary-focus);
+}
+.st-input.st-input--primary.st-input--fill {
+  background-color: var(--st-primary);
+  color: var(--st-primary-text);
+}
+.st-input.st-input--primary.st-input--fill::placeholder {
+  color: var(--st-primary-text-dim);
+}
+.st-input.st-input--primary.st-input--fill:hover {
+  background-color: var(--st-primary-hover);
+}
+.st-input.st-input--primary.st-input--fill:focus {
+  background-color: var(--st-primary-focus);
+}
+.st-input.st-input--secondary {
+  border: 1px solid var(--st-secondary);
+}
+.st-input.st-input--secondary:hover {
+  border: 1px solid var(--st-secondary-hover);
+}
+.st-input.st-input--secondary:focus {
+  border: 1px solid var(--st-secondary-focus);
+}
+.st-input.st-input--secondary.st-input--fill {
+  background-color: var(--st-secondary);
+  color: var(--st-secondary-text);
+}
+.st-input.st-input--secondary.st-input--fill::placeholder {
+  color: var(--st-secondary-text-dim);
+}
+.st-input.st-input--secondary.st-input--fill:hover {
+  background-color: var(--st-secondary-hover);
+}
+.st-input.st-input--secondary.st-input--fill:focus {
+  background-color: var(--st-secondary-focus);
+}
+.st-input.st-input--big {
+  padding: 1rem 1rem;
+  height: 4rem;
+}
+.st-input.st-input--medium {
+  padding: 1rem;
+  height: 3rem;
+}
+.st-input.st-input--small {
+  padding: 0.5rem;
+  height: 2rem;
+}
+.st-select {
+  width: auto;
+  padding: 0.2rem;
+  font: inherit;
+  background: var(--st-background);
+  color: var(--st-text);
+  text-align: center;
+  text-align-last: center;
+  -moz-text-align-last: center;
+}
+.st-select > option {
+  background: var(--st-background);
+  color: var(--st-text);
+}
+.st-select:hover {
+  background: var(--st-background-hover);
+}
+.st-select:focus {
+  background: var(--st-background-hover);
+  border: 1px solid var(--st-primary);
+  outline: none;
+}
+.st-select.st-select--primary {
+  border-color: var(--st-primary);
+}
+.st-select.st-select--primary:hover {
+  border-color: var(--st-primary-hover);
+}
+.st-select.st-select--primary:focus {
+  border: 1px solid var(--st-primary-focus);
+}
+.st-select.st-select--primary.st-select--fill {
+  background: var(--st-primary);
+  color: var(--st-primary-text);
+}
+.st-select.st-select--primary.st-select--fill:hover {
+  background: var(--st-primary-hover);
+}
+.st-select.st-select--primary.st-select--fill > option {
+  background: var(--st-primary-hover);
+  color: var(--st-primary-text);
+}
+.st-select.st-select--primary.st-select--fill:focus {
+  background: var(--st-primary-focus);
+}
+.st-select.st-select--secondary {
+  border-color: var(--st-secondary);
+}
+.st-select.st-select--secondary:hover {
+  border-color: var(--st-secondary-hover);
+}
+.st-select.st-select--secondary:focus {
+  border: 1px solid var(--st-secondary-hover);
+}
+.st-select.st-select--secondary.st-select--fill {
+  background: var(--st-secondary);
+  color: var(--st-secondary-text);
+}
+.st-select.st-select--secondary.st-select--fill:hover {
+  background: var(--st-secondary-hover);
+}
+.st-select.st-select--secondary.st-select--fill > option {
+  background: var(--st-secondary-hover);
+  color: var(--st-secondary-text);
+}
+.st-select.st-select--secondary.st-select--fill:focus {
+  background: var(--st-secondary-hover);
+}
+.st-select.st-select--small {
+  padding: 0.1rem;
+}
+.st-select.st-select--medium {
+  padding: 0.2rem;
+}
+.st-select.st-select--big {
+  padding: 0.3rem;
+}
+.st-form {
+  margin: 0;
+  padding: 0;
+}
+.st-form .st-form__control {
+  margin: 1rem 0;
+}
+.st-form .st-form__control .st-form__label {
+  padding: 0.25rem;
+  display: inline-flex;
+  justify-content: left;
+  align-items: center;
+}
+.st-form .st-form__control .st-form__label label,
+.st-form .st-form__control .st-form__label span {
+  margin-right: 0.5rem;
+  color: var(--st-text);
+}
+.st-form .st-form__control .st-form__label--block {
+  display: flex;
+}
+.st-form .st-form__control .st-form__label--multi {
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.st-form .st-form__control .st-form__label--multi span {
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+}
+.st-form .st-form__control .st-form__label--full {
+  width: 100%;
+}
+.st-form .st-form__control .st-form__label--full .st-form__input {
+  width: 100%;
+}
+.st-form .st-form__control .st-form__label--settings {
+  width: 100%;
+  justify-content: space-between;
+}
+.st-form .st-form__control .st-form__submit {
+  min-width: 200px;
+}
+.st-form .st-form__control .st-form__submit--big {
+  min-width: 300px;
+}
+.st-form .st-form__control .st-form__submit--medium {
+  min-width: 200px;
+}
+.st-form .st-form__control .st-form__submit--small {
+  min-width: 100px;
+}
+.st-form .st-form__control--small {
+  margin: 0.5rem 0;
+}
+.st-form .st-form__control--small > .st-form__label {
+  padding: 0.05rem 0;
+}
+.st-form .st-form__control--big {
+  margin: 1.5rem 0;
+}
+.st-form .st-form__control--big > .st-form__label {
+  padding: 0.75rem 0;
+}
+.st-form .st-form__control--medium {
+  margin: 1rem 0;
+}
+.st-form .st-form__control--medium > .st-form__label {
+  padding: 0.25rem;
+}
+.st-list .st-list__section {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--st-background);
+  color: var(--st-text);
+  width: fit-content;
+}
+.st-list .st-list__section .st-list__header {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--st-text);
+  margin-bottom: 0.5rem;
+}
+.st-list .st-list__section *:not(.st-list__header) {
+  padding: 0.25rem 0.5rem;
+}
+.st-list.st-list--primary .st-list__section .st-list__header {
+  border-bottom: 1px solid var(--st-primary);
+}
+.st-list.st-list--primary.st-list--fill .st-list__section .st-list__header {
+  border-bottom: none;
+  background-color: var(--st-primary-focus);
+  color: var(--st-primary-text);
+}
+.st-list.st-list--secondary .st-list__section .st-list__header {
+  border-bottom: 1px solid var(--st-secondary);
+}
+.st-list.st-list--secondary.st-list--fill .st-list__section .st-list__header {
+  border-bottom: none;
+  background-color: var(--st-secondary-focus);
+  color: var(--st-secondary-text);
+}
+.st-list.st-list--fill .st-list__section .st-list__header {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.5rem;
+}
+.st-list.st-list--big .st-list__section .st-list__header {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.st-list.st-list--big .st-list__section *:not(.st-list__header) {
+  padding: 0.3em 0.75rem;
+  font-size: 1.25rem;
+}
+.st-list.st-list--big.st-list--fill .st-list__section .st-list__header {
+  padding: 0.75rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--big.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.75rem;
+}
+.st-list.st-list--medium .st-list__section .st-list__header {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.st-list.st-list--medium .st-list__section *:not(.st-list__header) {
+  padding: 0.25em 0.5rem;
+  font-size: 1rem;
+}
+.st-list.st-list--medium.st-list--fill .st-list__section .st-list__header {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--medium.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.5rem;
+}
+.st-list.st-list--small .st-list__section .st-list__header {
+  font-size: 1rem;
+  padding: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+.st-list.st-list--small .st-list__section *:not(.st-list__header) {
+  padding: 0.2em 0.4rem;
+  font-size: 0.8rem;
+}
+.st-list.st-list--small.st-list--fill .st-list__section .st-list__header {
+  padding: 0.75rem;
+  margin-bottom: 0;
+}
+.st-list.st-list--small.st-list--fill .st-list__section *:not(.st-list__header) {
+  padding: 0.75rem;
+}
+.st-table {
+  border-collapse: collapse;
+  text-align: left;
+}
+.st-table thead tr {
+  border-width: 2px;
+  border-bottom: 1px solid var(--st-text);
+}
+.st-table thead tr th {
+  padding: 0.6rem 1.5rem;
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: var(--st-text);
+}
+.st-table tr {
+  border-bottom: 1px solid var(--st-secondary);
+}
+.st-table tbody {
+  font-family: Roboto, sans-serif;
+}
+.st-table tbody tr td {
+  padding: 1rem 1.5rem;
+  color: var(--st-text);
+}
+.st-table tbody tr:hover {
+  background: var(--st-background-hover);
+}
+.st-table.st-table--small thead tr th {
+  padding: 0.45rem 0.5rem;
+  font-size: 1.15rem;
+}
+.st-table.st-table--small tbody tr td {
+  padding: 0.7rem 0.5rem;
+  font-size: 0.85rem;
+}
+.st-table.st-table--medium thead tr th {
+  padding: 0.6rem 1.5rem;
+}
+.st-table.st-table--medium tbody tr td {
+  padding: 1rem 1.5rem;
+}
+.st-table.st-table--big thead tr th {
+  padding: 0.8rem 2.25rem;
+}
+.st-table.st-table--big tbody tr td {
+  padding: 1.25rem 2.25rem;
+}
+.st-table.st-table--primary thead tr {
+  border-bottom: none;
+}
+.st-table.st-table--primary thead tr th {
+  background: var(--st-primary);
+  color: var(--st-primary-text);
+}
+.st-table.st-table--primary tr {
+  border-bottom: 1px solid var(--st-primary);
+}
+.st-table.st-table--secondary thead tr {
+  border-bottom: none;
+}
+.st-table.st-table--secondary thead tr th {
+  background: var(--st-secondary);
+  color: var(--st-secondary-text);
+}
+.st-table.st-table--secondary tr {
+  border-bottom: 1px solid var(--st-secondary);
+}
+.st-table.st-table--full {
+  width: 100%;
+}
+.st-table.st-table--separator thead tr th + th {
+  border-left: 1px solid var(--st-secondary);
+}
+.st-table.st-table--separator tbody tr td + td {
+  border-left: 1px solid var(--st-secondary);
+}
+.st-table.st-table--no-highlight tbody tr:hover {
+  background: none;
+}
+.st-tooltip {
+  position: relative;
+  width: fit-content;
+}
+.st-tooltip.st-tooltip--inline {
+  display: inline-block;
+}
+.st-tooltip span.st-tooltip__text {
+  visibility: hidden;
+  background-color: var(--st-background-hover);
+  color: var(--st-text);
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  box-shadow: 0 0 5px 3px var(--st-background);
+  border: 1px solid var(--st-text);
+  z-index: 1;
+  position: absolute;
+  bottom: 103%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.st-tooltip span.st-tooltip__text.st-tooltip--bottom {
+  bottom: 0;
+  top: 103%;
+}
+.st-tooltip:hover .st-tooltip__text {
+  visibility: visible;
+}
