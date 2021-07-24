@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="added more list features">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="26d8bfb9-875a-454b-b115-1ccfcb270187" name="Default Changelist" comment="Added tooltips">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tooltip.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/tooltip.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stimetable.css" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stimetable.less" beforeDir="false" afterPath="$PROJECT_DIR$/stimetable.less" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +86,22 @@
       <recent name="E:\Folder2020\Projects\NpmProjects\stimetable.css\wrappers\react\src\components" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build (1)">
+  <component name="RunManager" selected="npm.build-publish">
     <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build-publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-publish" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -128,23 +137,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="watch-build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/wrappers/react/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch-build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build-publish" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.run-dev" />
-        <item itemvalue="npm.watch-build" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +182,15 @@
       <workItem from="1615367244409" duration="22000" />
       <workItem from="1615450354326" duration="185000" />
       <workItem from="1618985500610" duration="1201000" />
-      <workItem from="1626596636291" duration="9769000" />
+      <workItem from="1626596636291" duration="11907000" />
+      <workItem from="1626662735730" duration="2207000" />
+      <workItem from="1626689663835" duration="35000" />
+      <workItem from="1626689803442" duration="2051000" />
+      <workItem from="1626774111654" duration="33000" />
+      <workItem from="1626844240988" duration="1648000" />
+      <workItem from="1626877085773" duration="1204000" />
+      <workItem from="1627034964649" duration="818000" />
+      <workItem from="1627124685232" duration="1134000" />
     </task>
     <task id="LOCAL-00001" summary=".gitignore">
       <created>1601601189943</created>
@@ -269,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626610092878</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added tooltips">
+      <created>1626610786519</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626610786519</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +315,7 @@
     <MESSAGE value="Tooltips and such" />
     <MESSAGE value="Changed to less and more modularized" />
     <MESSAGE value="added more list features" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more list features" />
+    <MESSAGE value="Added tooltips" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tooltips" />
   </component>
 </project>

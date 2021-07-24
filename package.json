@@ -1,6 +1,6 @@
 {
   "name": "stimetable.css",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Custom Stylesheet Package for STimetable",
   "main": "stimetable.css",
   "style": "stimetable.css",
@@ -12,7 +12,8 @@
   "license": "MIT",
   "scripts": {
     "build": "lessc stimetable.less stimetable.css",
-    "dev": "http-server -p 6969 -o test.html -c-1"
+    "dev": "http-server -p 6969 -o test.html -c-1",
+    "build-publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "http-server": "^0.12.3",
